@@ -1,0 +1,14 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# React / build
+client/build/
+client/dist/
+*.env
+
+# System
+.DS_Store
+.idea/
+.vscode/
