@@ -1,23 +1,73 @@
-Соглашение о коммитах (Conventional Commits)
+# React + TypeScript + Vite
 
-Это очень популярный формализованный стандарт, который автоматизирует ведение версий (SemVer) и генерацию changelog.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Формат: <type>: <description>
+Currently, two official plugins are available:
 
-Основные типы (types):
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-    feat: Новая функциональность (соответствует MINOR в SemVer).
+## React Compiler
 
-    fix: Исправление бага (соответствует PATCH в SemVer).
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-    docs: Изменения в документации.
+## Expanding the ESLint configuration
 
-    style: Изменения, не влияющие на смысл кода (отступы, форматирование, пропущенные точки с запятой).
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-    refactor: Изменения кода, которые не исправляют баги и не добавляют фичи.
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-    perf: Изменения, улучшающие производительность.
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-    test: Добавление или исправление тестов.
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-    chore: Обновление сборки, вспомогательных инструментов, библиотек и т.д. (рутинные задачи).
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
