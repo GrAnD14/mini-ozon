@@ -1,14 +1,3 @@
-# Node
-node_modules/
-npm-debug.log
-yarn-error.log
+node_modules
 
-# React / build
-client/build/
-client/dist/
 *.env
-
-# System
-.DS_Store
-.idea/
-.vscode/

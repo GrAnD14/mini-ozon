@@ -1,0 +1,25 @@
+{
+  "name": "mini-ozon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "npm start dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrAnD14/mini-ozon.git"
+  },
+  "keywords": [],
+  "author": "<MVP Team/>",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GrAnD14/mini-ozon/issues"
+  },
+  "homepage": "https://github.com/GrAnD14/mini-ozon#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
