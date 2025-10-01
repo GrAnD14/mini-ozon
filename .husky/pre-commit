@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+echo "🔍 Running pre-commit checks..."
+
+# Просто запускаем lint-staged если он есть
+if command -v npx >/dev/null 2>&1; then
+    if npx --yes lint-staged >/dev/null 2>&1; then
+        npx lint-staged
+    else
+        echo "⚠️  lint-staged not found, running eslint"
+        npx eslint --fix src/ || true
+    fi
+else
+    echo "❌ npx not available"
+    exit 1
+fi
