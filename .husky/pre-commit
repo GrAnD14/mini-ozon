@@ -1,26 +1,15 @@
 #!/usr/bin/env sh
-. "$(dirname "$0")/_/husky.sh"
+echo "🔍 Running pre-commit checks..."
 
-echo "🧹 Running pre-commit checks..."
-
-# Проверяем установлен ли lint-staged
+# Просто запускаем lint-staged если он есть
 if command -v npx >/dev/null 2>&1; then
     if npx --yes lint-staged >/dev/null 2>&1; then
-        echo "📦 Running lint-staged..."
         npx lint-staged
     else
-        echo "⚠️  lint-staged not found, running basic checks"
+        echo "⚠️  lint-staged not found, running eslint"
         npx eslint --fix src/ || true
     fi
 else
     echo "❌ npx not available"
     exit 1
 fi
-
-# Проверяем результат
-if [ $? -ne 0 ]; then
-    echo "❌ Pre-commit checks failed! Please fix the issues."
-    exit 1
-fi
-
-echo "✅ Pre-commit checks passed!"
