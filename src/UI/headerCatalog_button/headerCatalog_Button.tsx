@@ -1,4 +1,4 @@
-import { StyledHeaderCatalogButton} from "./headerCatalog_button.styled.ts";
+import { StyledHeaderCatalogButton } from "./headerCatalog_button.styled.ts";
 
 const HeaderCatalogButton = () => {
 	return (
