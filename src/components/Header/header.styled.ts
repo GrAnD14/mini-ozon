@@ -7,4 +7,11 @@ export const HeaderStyle = styled.div`
 		align-items: center;
 		justify-content: space-between;
 		
+		.logo-ozon {
+			display: inline-block;
+		}
+
+
+}
+		
 `
