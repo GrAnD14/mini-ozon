@@ -5,30 +5,41 @@ export const StyledHeaderIcons = styled.div` //экспортируем пере
 		//(img (для стилизации фото), h1-h6(для стилизации заголовков), p(для стилизации параграфов) и т.п.)
 		
 		//Дальше просто пишем, как обычные стили css
-    width: 25px;
+    width: 274px;
     height: 42px;
-	display: flex;
-
-.icons {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+`
+export const Icons = styled.div`
   display: flex;
   align-items: center;
   gap: 30px;
-}
+`
 
-.icon-item {
+
+export const IconItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-}
+`
 
-.icon-item img {
+
+export const IconItemImage = styled.img`
+
   width: 24px;
   height: 24px;
   margin-bottom: 4px;
-}
+	&:hover{
+		color: #fff;
+		filter: brightness(0%);
+	}
+`
 
-.icon-item p {
+
+
+export const IconItemParagraph = styled.p`
   font-size: 13px;
   color: #555;
   margin: 0;
@@ -36,9 +47,9 @@ export const StyledHeaderIcons = styled.div` //экспортируем пере
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 17px
-}
 
-.icon-item .Admin {
+`
+export const IiconItemAdmin = styled.p`
   font-size: 13px;
   color: #000000ff;
   margin: 0;
@@ -46,6 +57,4 @@ export const StyledHeaderIcons = styled.div` //экспортируем пере
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 17px
-}
-	
-`;
+`
