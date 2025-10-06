@@ -1,4 +1,4 @@
-import {HeaderStyle, LogoOzon} from "./header.styled.ts";
+import {HeaderStyle} from "./header.styled.ts";
 import HeaderTop from "./HeaderTop/HeaderTop.tsx";
 
 

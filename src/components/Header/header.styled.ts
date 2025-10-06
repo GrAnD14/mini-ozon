@@ -6,12 +6,4 @@ export const HeaderStyle = styled.div`
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		
-		.logo-ozon {
-			display: inline-block;
-		}
-
-
-}
-		
 `
