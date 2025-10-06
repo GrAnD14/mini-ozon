@@ -7,6 +7,7 @@ function Header() {
 		<HeaderStyle>
 				<a href="#"><LogoOzon src="public/Header/Nav/Logo.jpg" alt="logo-ozon" /></a>
 				<HeaderTop/>
+				
 		</HeaderStyle>
 	);
 }
