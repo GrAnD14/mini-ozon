@@ -37,23 +37,22 @@ export const SearchInputBlock = styled.input`
 	height: 43.08px;
 	background: rgba(255, 255, 255, 1);
 	border-radius: 10px;
-	color: rgba(125, 125, 125, 1);
+	color: rgba(0, 0, 0, 1);
 	font-family: 'Inter', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 17px
+	line-height: 17px;
 `
 
 export const IconCameraLink = styled.a`
   	display: inline-block;
 `
 export const IconCamera = styled.img`
-  	margin-right: 10px;
-		transform: translate(-50px, 0px);
+  	margin-right: 15px;
 		cursor: pointer;
 		&:hover {
         content: url("/Header/Nav/Camera_hover.svg");
-    }
+		}
 `
 
 export const SearchBtnLink = styled.a`
