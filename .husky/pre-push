@@ -1,0 +1,48 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🚀 Running pre-push checks..."
+
+current_branch=$(git branch --show-current)
+echo "📋 Current branch: $current_branch"
+
+# Проверяем package.json
+if [ ! -f package.json ]; then
+    echo "❌ package.json not found"
+    exit 1
+fi
+
+# Запускаем линтинг
+echo "🔍 Running ESLint..."
+if npm run lint 2>/dev/null; then
+    echo "✅ ESLint passed"
+else
+    echo "❌ ESLint failed! Fix errors before pushing."
+    exit 1
+fi
+
+# Проверяем тесты
+if npm run | grep -q "\"test\""; then
+    echo "🧪 Running tests..."
+    if npm run test -- --passWithNoTests --watchAll=false 2>/dev/null; then
+        echo "✅ Tests passed"
+    else
+        echo "❌ Tests failed!"
+        exit 1
+    fi
+else
+    echo "⚠️  No tests configured, skipping"
+fi
+
+# Проверяем сборку для основных веток
+if [ "$current_branch" = "main" ] || [ "$current_branch" = "master" ] || [ "$current_branch" = "develop" ]; then
+    echo "🏗️  Checking build..."
+    if npm run build 2>/dev/null; then
+        echo "✅ Build successful"
+    else
+        echo "❌ Build failed!"
+        exit 1
+    fi
+fi
+
+echo "🎉 All pre-push checks passed! Pushing to $current_branch..."

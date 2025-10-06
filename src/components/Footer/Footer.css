@@ -1,0 +1,294 @@
+.footer-container {
+  position: relative;
+  padding: 40px;
+  width: 100%;
+  background: rgba(246, 248, 251, 1);
+  box-sizing: border-box;
+}
+
+.footer-container__jobs {
+  margin: 0;
+  max-width: 1472px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 20px 40px 20px 20px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  background: rgba(237, 241, 247, 1);
+  box-shadow: 0 1px 0 rgba(16, 24, 40, 0.03);
+}
+
+.footer-container__jobs-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.footer-container__jobs-inner--logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo-link {
+  display: block;
+}
+
+.footer-logo-link img {
+  display: block;
+  height: 33px;
+  width: 140px;
+}
+
+.footer-container__jobs-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 55px;
+  margin-left: auto; /* pushes icons to the right dynamically */
+  flex-wrap: wrap;
+  height: 24px;
+  overflow: hidden;
+}
+
+.footer-container__jobs-icons--item,
+.warehouse-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.12s ease, color 0.12s ease;
+}
+
+.footer-container__jobs-icons--item_warehouse {
+  margin: 0 -20px;
+}
+
+.footer-container__jobs-icons--item img {
+  height: 18px;
+  width: auto;
+}
+
+.footer-container__jobs-icons--item.fresh-icon img,
+.footer-container__jobs-icons--item.warehouse-icon img {
+  height: 20px;
+}
+
+.footer-container__jobs-icons--title {
+  margin: 0;
+  font-family: "Onest", arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #070707;
+  line-height: 1;
+  text-align: center;
+}
+
+.footer-container__jobs-icons--item:hover .footer-container__jobs-icons--title,
+.footer-container__jobs-icons--item:focus .footer-container__jobs-icons--title {
+  color: #005bff;
+}
+.footer-container__jobs-icons--item:hover img {
+  filter: invert(24%) sepia(98%) saturate(3600%) hue-rotate(207deg)
+    brightness(90%) contrast(105%);
+}
+/* .footer-container__jobs-icons--item:focus-visible {
+  box-shadow: 0 0 0 3px rgba(0, 91, 255, 0.12);
+  border-radius: 6px;
+} */
+.footer-container_qr-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1472px;
+  gap: 24px;
+  box-sizing: border-box;
+  height: 606px;
+  align-items: stretch;
+}
+.footer-container__top {
+  display: flex;
+  gap: 24px;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+.footer-container__qr {
+  align-items: center;
+  border: 1px solid rgba(0, 26, 52, 0.2);
+  border-radius: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 23px;
+  text-align: center;
+  margin-right: 30px;
+  width: 265px;
+  flex: 0 0 265px;
+  height: 606px;
+}
+.footer-container__qr-pic img {
+  border-radius: 16px;
+  height: 190px;
+  width: 190px;
+  border: none;
+  outline: none;
+  overflow: clip;
+}
+
+.footer-container__qr-pic--title {
+  color: rgba(0, 26, 52, 0.6);
+  font-size: 16px;
+  margin: 16px auto;
+  max-width: 230px;
+  line-height: 1.2;
+}
+
+.footer-container__qr-download {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.footer-container__qr-download img {
+  width: 42px;
+  height: 42px;
+}
+.footer-container__links {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  height: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+}
+.footer-container__links-top {
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* allow horizontal scroll when viewport is narrower */
+  -webkit-overflow-scrolling: touch;
+  min-width: 0;
+  box-sizing: border-box;
+}
+.footer-container__links-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  min-width: 140px;
+  width: 25%;
+  padding: 0 80px 0 0; /* right padding acts as the visual separator */
+  flex: 0 0 240px;
+  box-sizing: border-box;
+}
+.footer-container__links-list--title {
+  display: block;
+  color: #070707;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+
+  /* width: 100%; */
+}
+.footer-container__links-list--title span {
+  display: block;
+}
+
+.footer-container__links-list--item {
+  margin-bottom: 8px;
+  color: rgba(0, 26, 52, 0.6);
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  text-align: left;
+  padding: 0;
+}
+
+.footer-container__links-list--item:hover {
+  color: #005bff;
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-container__bottom-row {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  left: 40px;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  box-sizing: border-box;
+}
+.footer-container__bottom-left {
+  flex: 1;
+}
+.footer-container__bottom-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  margin-right: 40px;
+  min-width: auto !important;
+  padding-top: 0;
+}
+.footer-container__bottom-center a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background-color: #fff;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+.footer-container__bottom-center a:hover {
+  transform: scale(1.1);
+}
+.footer-container__bottom-center a[href*="vk"]:hover {
+  background-color: #4680c2;
+}
+.footer-container__bottom-center a[href*="ok"]:hover {
+  background-color: #fa8409;
+}
+.footer-container__bottom-center a[href*="t.me"]:hover {
+  background-color: #2cb5f5;
+}
+.footer-container__bottom-center a img {
+  width: 24px;
+  height: 24px;
+  pointer-events: none; /* so hover works on <a>, not the SVG */
+}
+.footer-container__bottom-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 0.6;
+}
+.footer-container__links-bottom--info {
+  color: rgba(0, 26, 52, 0.6);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+}

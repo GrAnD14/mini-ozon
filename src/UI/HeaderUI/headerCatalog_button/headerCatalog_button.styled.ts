@@ -17,6 +17,12 @@ export const StyledHeaderCatalogButton = styled.button` //экспортируе
 		color: #fff;
 		font-family: "Inter", sans-serif;
     font-weight: 600;
+
+	&:hover {
+		background: rgb(96, 146, 229);
+	}
+
+
 `;
 
 //как написали нужный нам стиль --> переходим в компонент, куда мы хотим ее добавить (в нашем случае headerCatalog_Button)
