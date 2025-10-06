@@ -7,7 +7,7 @@ export const StyledSearchInput = styled.div` //экспортируем пере
 		//Дальше просто пишем, как обычные стили css без указывания классов и скобок (1-й переменной = 1 стилизация. Новая переменная = новая стилизация)
 		display: flex;
   	align-items: center;
-		justify-content: space-between;
+	justify-content: space-between;
   	border: 2px solid rgba(0, 91, 255, 1);
   	border-radius: 10px;
   	width: 664px;
@@ -25,6 +25,10 @@ export const CategoryBtn = styled.button`
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 17px;
+
+	&:hover {
+		color: rgba(0, 91, 255, 1);
+	}
 `
 
 export const SearchInputBlock = styled.input`
