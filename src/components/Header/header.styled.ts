@@ -7,8 +7,3 @@ export const HeaderStyle = styled.div`
 		align-items: center;
 		justify-content: space-between;
 `
-
-export const LogoOzon = styled.img`
-			display: inline-block;
-`
-
