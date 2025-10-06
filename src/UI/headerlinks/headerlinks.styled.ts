@@ -11,7 +11,6 @@ export const StyledHeaderLinks = styled.nav` //экспортируем пере
     gap: 50px;
     align-items: flex-end;
     padding: 8px 0;
-    color: rgba(125, 125, 125, 1);
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;
@@ -21,9 +20,15 @@ export const StyledHeaderLinks = styled.nav` //экспортируем пере
     width: 808px;
     height: 17px;
 
+    a {
+         color: rgba(125, 125, 125, 1);
+    }
+
     a:hover {
         color: rgba(0, 91, 255, 1);
     }
+
+    
    
 
 

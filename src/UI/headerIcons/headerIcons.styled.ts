@@ -31,10 +31,18 @@ export const IconItemImage = styled.img`
   width: 24px;
   height: 24px;
   margin-bottom: 4px;
-	&:hover{
-		color: #fff;
-		filter: brightness(0%);
-	}
+  &.login:hover {
+        content: url("/Header/Nav/LogIn_blue.svg");
+		}
+  &.orders:hover {
+        content: url("/Header/Nav/Orders_blue.svg");
+		}
+  &.favorites:hover {
+        content: url("/Header/Nav/favorites_blue.svg");
+		}
+  &.cart:hover {
+        content: url("/Header/Nav/Shopping_cart_blue.svg");
+		}                  
 `
 
 
@@ -46,15 +54,21 @@ export const IconItemParagraph = styled.p`
   font-family: Inter;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 17px
+	line-height: 17px;
+  &:hover{
+    color: rgba(0, 91, 255, 1);
+  }
 
 `
-export const IiconItemAdmin = styled.p`
+export const IconItemAdmin = styled.p`
   font-size: 13px;
   color: #000000ff;
   margin: 0;
   font-family: Inter;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 17px
+	line-height: 17px;
+  &:hover{
+    color: rgba(0, 91, 255, 1);
+  
 `
