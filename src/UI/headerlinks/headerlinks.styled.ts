@@ -15,7 +15,6 @@ export const StyledHeaderLinks = styled.nav` //экспортируем пере
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
-    margin-bottom: 40px;
     margin-left: 174px;
     width: 808px;
     height: 17px;

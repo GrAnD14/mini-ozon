@@ -74,4 +74,4 @@ export const SearchBtn = styled.img`
 	border-radius: 10px;
 	cursor: pointer;
     margin: 0 auto;
-	`
+`
