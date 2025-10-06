@@ -3,8 +3,6 @@ import {IconItem, IconItemImage, IconItemParagraph, IconItemAdmin, StyledHeaderI
 const HeaderIcons = () => {
     return (
       <StyledHeaderIcons>
-            {/*передаем нашу переменную сюда, как компонент, в таком виде <Имя_переменной, которую мы создали ранее>.*/}
-            {/* А внутри уже пишем все, что нам нужно (хоть добавляем еще новую стилизованную переменную по старой тактике)*/}
                 <IconItem>
                     <IconItemImage className="login" src="/Header/Nav/LogIn.svg" alt="Admin" />
                     <IconItemAdmin className="Admin">Admin</IconItemAdmin>
