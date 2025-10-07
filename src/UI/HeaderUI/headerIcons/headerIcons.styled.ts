@@ -63,7 +63,7 @@ export const IconItemParagraph = styled.p`
 
 `
 export const IiconItemAdmin = styled.p`
-  color: #000000ff;
+  color: #555;
   margin: 0;
   font-family: Inter;
 	font-size: 14px;
