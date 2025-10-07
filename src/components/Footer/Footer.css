@@ -170,14 +170,15 @@
   justify-content: flex-start;
   height: 100%;
   box-sizing: border-box;
-  min-width: 0;
+  max-width: 100%;
 }
 .footer-container__links-top {
   display: flex;
   gap: 0;
+  width: 100%;
   align-items: flex-start;
   flex-wrap: nowrap;
-  overflow-x: auto; /* allow horizontal scroll when viewport is narrower */
+  overflow-x: hidden; /* allow horizontal scroll when viewport is narrower */
   -webkit-overflow-scrolling: touch;
   min-width: 0;
   box-sizing: border-box;
