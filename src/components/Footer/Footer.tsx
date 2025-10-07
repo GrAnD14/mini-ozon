@@ -1,9 +1,7 @@
-import React from "react";
 import "./Footer.css";
 
-interface FooterProps {}
 
-export const Footer: React.FC<FooterProps> = () => {
+export const Footer = () => {
   return (
     <footer>
       <div className="footer-container">
