@@ -6,12 +6,7 @@ export const Container = styled.div`
 		justify-content: space-between;
 		max-width: 1400px;
 		height: 100%;
-    	padding: 10px 29px;
+		padding: 10px 29px;
 		margin-left: auto;
 		margin-right: auto;
-		padding-right: 250px;
-		border-bottom-left-radius: 10px;
-		border-bottom-right-radius: 10px;
-		
-		
 `
