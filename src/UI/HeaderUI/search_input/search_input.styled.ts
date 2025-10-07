@@ -32,9 +32,9 @@ export const CategoryBtn = styled.button `
 `
 
 export const SearchInputSpace = styled.input `
-  	padding-left: 8px;
+	padding-left: 8px;
 	width: 559.05px;
-	height: 42.08px;
+	height: 100%;
 	background: rgba(255, 255, 255, 1);
 	border-radius: 10px;
 	color: rgba(0, 0, 0, 1);
