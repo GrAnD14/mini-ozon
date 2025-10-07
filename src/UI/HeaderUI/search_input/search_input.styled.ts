@@ -37,7 +37,7 @@ export const SearchInputSpace = styled.input `
 	height: 42.08px;
 	background: rgba(255, 255, 255, 1);
 	border-radius: 10px;
-	color: rgba(125, 125, 125, 1);
+	color: rgba(0, 0, 0, 1);
 	font-family: 'Inter', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -63,9 +63,9 @@ export const SearchBtnLink = styled.button `
 	border-radius: 10px;
 	transform: translate(41px, 0px);
 	background: rgba(0, 91, 255, 1);
-		&:hover {
-        background: rgba(0, 89, 255, 0.87);;
-		}
+	&:hover {
+    background: rgba(0, 89, 255, 0.87);;
+	}
 `
 
 export const SearchBtn = styled.img `
