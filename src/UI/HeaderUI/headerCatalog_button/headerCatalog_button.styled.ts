@@ -7,16 +7,19 @@ export const StyledHeaderCatalogButton = styled.button` //экспортируе
 		//Дальше просто пишем, как обычные стили css
     width: 140px;
     height: 43px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 11px;
-		background: rgba(0, 91, 255, 1);
-		padding: 13px 15px;
-		border-radius: 10px;
-		color: #fff;
-		font-family: "Inter", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 11px;
+	background: rgba(0, 91, 255, 1);
+	padding: 13px 15px;
+	border-radius: 10px;
+	color: #fff;
+	font-family: "Inter", sans-serif;
     font-weight: 600;
-`;
+	&:hover{
+	background: rgba(0, 89, 255, 0.72);
+	}
+`
 
 //как написали нужный нам стиль --> переходим в компонент, куда мы хотим ее добавить (в нашем случае headerCatalog_Button)

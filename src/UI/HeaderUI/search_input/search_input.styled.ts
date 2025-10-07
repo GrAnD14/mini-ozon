@@ -5,11 +5,11 @@ export const StyledSearchInput = styled.div `
 	position: sticky;
 	display: flex;
 	align-items: center;
-	border: 2px solid rgba(0, 91, 255, 1);
+	border: 3px solid rgba(0, 91, 255, 1);
 	border-radius: 10px;
 	width: 664px;
 	height: 47px;
-	background: rgba(0, 91, 255, 1);
+	background: rgba(255, 255, 255, 1);
 	padding-left: 6px;
 	padding-right: 40px;
 `
@@ -26,19 +26,23 @@ export const CategoryBtn = styled.button `
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 17px;
+	&:hover{
+	color: rgba(0, 91, 255, 1);
+	}
 `
 
 export const SearchInputSpace = styled.input `
-  	padding-left: 8px;
-		width: 559.05px;
-		height: 43.08px;
-		background: rgba(255, 255, 255, 1);
-		border-radius: 10px;
-		color: rgba(125, 125, 125, 1);
-		font-family: 'Inter', sans-serif;
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 17px
+	padding-left: 8px;
+	width: 559.05px;
+	height: 100%;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 10px;
+	color: rgba(0, 0, 0, 1);
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17px;
+	border-radius-right: 10px;
 `
 
 export const IconCameraLink = styled.div `
@@ -46,8 +50,7 @@ export const IconCameraLink = styled.div `
 `
 
 export const IconCamera = styled.img `
-  	margin-right: 10px;
-	transform: translate(-50px, 0px);
+	transform: translate(30px, 0px);
 	cursor: pointer;
 		&:hover {
         content: url("/Header/Nav/Camera_hover.svg");
@@ -58,9 +61,11 @@ export const SearchBtnLink = styled.button `
 	width: 80px;
 	height: 45px;
 	border-radius: 10px;
-		&:hover {
-        background: rgba(198, 216, 251, 0.2);
-		}
+	transform: translate(41px, 0px);
+	background: rgba(0, 91, 255, 1);
+	&:hover {
+    background: rgba(0, 89, 255, 0.87);;
+	}
 `
 
 export const SearchBtn = styled.img `
