@@ -6,9 +6,9 @@ import './slider.css'
 
 
 // // Import Swiper styles
-// @ts-expect-error
+// @ts-expect-error no type declarations for CSS
 import 'swiper/css';
-// @ts-expect-error
+// @ts-expect-error no type declarations for CSS
 import "swiper/css/navigation";
 
 const Slider = () => {
