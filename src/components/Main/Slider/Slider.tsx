@@ -6,9 +6,9 @@ import './slider.css'
 
 
 // // Import Swiper styles
-// @ts-ignore
+// @ts-expect-error
 import 'swiper/css';
-// @ts-ignore
+// @ts-expect-error
 import "swiper/css/navigation";
 
 const Slider = () => {
