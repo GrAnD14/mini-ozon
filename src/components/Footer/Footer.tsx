@@ -84,13 +84,17 @@ export const Footer = () => {
             <SocialIcons />
             <div
               style={{
-                color: "rgba(0,26,52,0.6)",
-                fontSize: 14,
-                textAlign: "right",
-                maxWidth: 480,
+                color: "rgba(125, 125, 125, 1)",
+                fontSize: 16,
+                textAlign: "left",
+                fontFamily: "Inter, sans-serif",
+                fontWeight: 400,
+                lineHeight: "24px",
+                maxWidth: 300,
               }}
             >
-              © 1998 – 2025 ООО "Интернет Решения" ... Все права защищены.
+             © 1998–2025 ООО "Интернет Решения" (входит в группу компаний Ozon: дочерняя компания ООО
+            "Озон Холдинг"). Все права защищены.
             </div>
           </div>
         </div>

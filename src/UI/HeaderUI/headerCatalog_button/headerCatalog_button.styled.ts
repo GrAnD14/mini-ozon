@@ -5,8 +5,8 @@ export const StyledHeaderCatalogButton = styled.button` //экспортируе
 		//(img (для стилизации фото), h1-h6(для стилизации заголовков), p(для стилизации параграфов) и т.п.)
 		
 		//Дальше просто пишем, как обычные стили css
-    width: 140px;
-    height: 43px;
+  width: 140px;
+  height: 43px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -16,10 +16,70 @@ export const StyledHeaderCatalogButton = styled.button` //экспортируе
 	border-radius: 10px;
 	color: #fff;
 	font-family: "Inter", sans-serif;
-    font-weight: 600;
+  font-weight: 600;
 	&:hover{
 	background: rgba(0, 89, 255, 0.72);
 	}
+
 `
+export const Wrapper = styled.div`
+  position: relative;
+  overflow: visible;
+`;
+
+
+export const Menu = styled.div`
+  position: absolute;
+  top: 150px;
+  left: -185px;
+  width: 1200px;
+  display: flex;
+  background: #fff;
+  z-index: 10; 
+`;
+
+export const Sidebar = styled.div`
+  width: 250px;
+  background: #f6f7f9;
+  max-height: 30vh;   
+  overflow-y: auto;  
+`;
+
+export const CategoryItem = styled.div`
+  padding: 12px 16px;
+  cursor: pointer;
+  &:hover {
+    background: #fff;
+    color: #005bff;
+  }
+`;
+
+export const ContentArea = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  row-gap: 30px;
+  padding: 5px 50px;
+  max-height: 100vh;   
+  overflow-y: auto;  
+`;
+
+export const Subcategory = styled.div`
+  h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  li {
+    color: #333;
+    
+    cursor: pointer;
+  }
+  li:hover {
+    color: #005bff;
+  }
+	
+`;
+
 
 //как написали нужный нам стиль --> переходим в компонент, куда мы хотим ее добавить (в нашем случае headerCatalog_Button)
