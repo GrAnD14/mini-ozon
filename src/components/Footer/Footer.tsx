@@ -85,12 +85,12 @@ export const Footer = () => {
             <div
               style={{
                 color: "rgba(125, 125, 125, 1)",
-                fontSize: 16,
+                fontSize: 14,
                 textAlign: "left",
                 fontFamily: "Inter, sans-serif",
                 fontWeight: 400,
                 lineHeight: "24px",
-                maxWidth: 300,
+                maxWidth: 260,
               }}
             >
              © 1998–2025 ООО "Интернет Решения" (входит в группу компаний Ozon: дочерняя компания ООО
