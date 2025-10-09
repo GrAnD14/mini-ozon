@@ -1,80 +1,69 @@
-import {
-	StyledHeaderCatalogButton,
-	Wrapper,
-	Menu,
-	Sidebar,
-	CategoryItem,
-	ContentArea,
-	Subcategory
-} from "./headerCatalog_button.styled.ts";
-import { useState } from "react";
+import { StyledHeaderCatalogButton, Wrapper, Menu, Sidebar, CategoryItem, ContentArea, Subcategory } from './headerCatalog_button.styled.ts';
+import { useState } from 'react';
+import ImagesImports from '../../../Imports/ImagesImports.ts';
 
 const HeaderCatalogButton = () => {
 	const [isOpen, setIsOpen] = useState(false);
-	const [activeCategory, setActiveCategory] = useState("Электроника");
+	const [activeCategory, setActiveCategory] = useState('Электроника');
 	const categories = [
 		{
-			name: "Электроника",
+			name: 'Электроника',
 			subcategories: [
-				{ title: "Телефоны и смарт-часы", items: ["Смартфоны", "Аксессуары", "Фитнес-браслеты"] },
-				{ title: "Компьютеры и периферия", items: ["Мониторы", "Системные блоки", "Ноутбуки"] },
-				{ title: "Умный дом", items: ["Аксессуары", "Выключатели и реле", "Датчики и регуляторы"] },
-				{ title: "Ноутбуки, планшеты и электронные книги", items: ["Ноутбуки", "Игровые ноутбуки", "Планшеты"] },
-			],
+				{ title: 'Телефоны и смарт-часы', items: ['Смартфоны', 'Аксессуары', 'Фитнес-браслеты'] },
+				{ title: 'Компьютеры и периферия', items: ['Мониторы', 'Системные блоки', 'Ноутбуки'] },
+				{ title: 'Умный дом', items: ['Аксессуары', 'Выключатели и реле', 'Датчики и регуляторы'] },
+				{ title: 'Ноутбуки, планшеты и электронные книги', items: ['Ноутбуки', 'Игровые ноутбуки', 'Планшеты'] }
+			]
 		},
 		{
-			name: "Одежда",
+			name: 'Одежда',
 			subcategories: [
-				{ title: "Мужская", items: ["Куртки", "Футболки", "Джинсы"] },
-				{ title: "Женская", items: ["Платья", "Юбки", "Блузки"] },
-			],
+				{ title: 'Мужская', items: ['Куртки', 'Футболки', 'Джинсы'] },
+				{ title: 'Женская', items: ['Платья', 'Юбки', 'Блузки'] }
+			]
 		},
 		{
-			name: "Обувь",
+			name: 'Обувь',
 			subcategories: [
-				{ title: "Телефоны и смарт-часы", items: ["Смартфоны", "Аксессуары", "Фитнес-браслеты"] },
-				{ title: "Компьютеры и периферия", items: ["Мониторы", "Системные блоки", "Ноутбуки"] },
-			],
+				{ title: 'Телефоны и смарт-часы', items: ['Смартфоны', 'Аксессуары', 'Фитнес-браслеты'] },
+				{ title: 'Компьютеры и периферия', items: ['Мониторы', 'Системные блоки', 'Ноутбуки'] }
+			]
 		},
 		{
-			name: "Дом и сад",
+			name: 'Дом и сад',
 			subcategories: [
-				{ title: "Мужская", items: ["Куртки", "Футболки", "Джинсы"] },
-				{ title: "Женская", items: ["Платья", "Юбки", "Блузки"] },
-			],
+				{ title: 'Мужская', items: ['Куртки', 'Футболки', 'Джинсы'] },
+				{ title: 'Женская', items: ['Платья', 'Юбки', 'Блузки'] }
+			]
 		},
 		{
-			name: "Красота и здоровье",
+			name: 'Красота и здоровье',
 			subcategories: [
-				{ title: "Телефоны и смарт-часы", items: ["Смартфоны", "Аксессуары", "Фитнес-браслеты"] },
-				{ title: "Компьютеры и периферия", items: ["Мониторы", "Системные блоки", "Ноутбуки"] },
-			],
+				{ title: 'Телефоны и смарт-часы', items: ['Смартфоны', 'Аксессуары', 'Фитнес-браслеты'] },
+				{ title: 'Компьютеры и периферия', items: ['Мониторы', 'Системные блоки', 'Ноутбуки'] }
+			]
 		},
 		{
-			name: "Бытовая техника",
+			name: 'Бытовая техника',
 			subcategories: [
-				{ title: "Мужская", items: ["Куртки", "Футболки", "Джинсы"] },
-				{ title: "Женская", items: ["Платья", "Юбки", "Блузки"] },
-			],
-		},
+				{ title: 'Мужская', items: ['Куртки', 'Футболки', 'Джинсы'] },
+				{ title: 'Женская', items: ['Платья', 'Юбки', 'Блузки'] }
+			]
+		}
 	];
 
 	return (
 		<Wrapper>
 			<StyledHeaderCatalogButton onClick={() => setIsOpen(!isOpen)}>
-				<img src="/Header/Nav/directory.svg" alt="catalog" />
+				<img src={ImagesImports.directory} alt='catalog' />
 				Каталог
 			</StyledHeaderCatalogButton>
 
 			{isOpen && (
 				<Menu>
 					<Sidebar>
-						{categories.map((c) => (
-							<CategoryItem
-								key={c.name}
-								onMouseEnter={() => setActiveCategory(c.name)}
-								className={activeCategory === c.name ? "active" : ""}
-							>
+						{categories.map(c => (
+							<CategoryItem key={c.name} onMouseEnter={() => setActiveCategory(c.name)} className={activeCategory === c.name ? 'active' : ''}>
 								{c.name}
 							</CategoryItem>
 						))}
@@ -82,12 +71,12 @@ const HeaderCatalogButton = () => {
 
 					<ContentArea>
 						{categories
-							.find((c) => c.name === activeCategory)
-							?.subcategories.map((sub) => (
+							.find(c => c.name === activeCategory)
+							?.subcategories.map(sub => (
 								<Subcategory key={sub.title}>
 									<h3>{sub.title}</h3>
 									<ul>
-										{sub.items.map((i) => (
+										{sub.items.map(i => (
 											<li key={i}>{i}</li>
 										))}
 									</ul>
@@ -99,6 +88,5 @@ const HeaderCatalogButton = () => {
 		</Wrapper>
 	);
 };
-
 
 export default HeaderCatalogButton;
