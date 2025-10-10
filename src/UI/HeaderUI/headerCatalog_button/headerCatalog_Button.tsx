@@ -224,24 +224,27 @@ const HeaderCatalogButton = () => {
 												fontSize: '32px',
 												color: '#000000',
 												display: 'block',
-												marginBottom: '8px', // расстояние под заголовком
+
 												lineHeight: '1.1' // плотнее текст
 											}}
 										>
 											{active.name_category}
 										</span>
 									)}
-
-									{active.subcategories.map(sub => (
-										<Subcategory key={sub.title}>
-											<h3>{sub.title}</h3>
-											<ul>
-												{sub.items.map(i => (
-													<li key={i}>{i}</li>
-												))}
-											</ul>
-										</Subcategory>
-									))}
+									<div className='subcategory-container'>
+										{active.subcategories.map(sub => (
+											<div key={sub.title}>
+												<Subcategory>
+													<h3>{sub.title}</h3>
+													<ul>
+														{sub.items.map(i => (
+															<li key={i}>{i}</li>
+														))}
+													</ul>
+												</Subcategory>
+											</div>
+										))}
+									</div>
 								</>
 							);
 						})()}
