@@ -31,6 +31,7 @@ import jobsLogo from '/Footer/jobsLogo.svg';
 import logisticsIcon from '/Footer/logisticsIcon.svg';
 import officeIcon from '/Footer/officeIcon.svg';
 import warehouseIcon from '/Footer/warehouseIcon.svg';
+import 
 // Footer/media
 import ok from '/Footer/media/ok.svg';
 import tg from '/Footer/media/tg.svg';
