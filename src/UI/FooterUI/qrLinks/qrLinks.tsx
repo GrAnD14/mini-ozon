@@ -4,7 +4,7 @@ import ImagesImports from '../../../Imports/ImagesImports.ts';
 const QrLinks = () => {
 	return (
 		<QrBlock>
-			<QrImage src='/Footer/downloadStores/qr-code.svg' alt='QR code' />
+			<QrImage src={ImagesImports.qr_code} alt='QR code' />
 			<QrTitle>Наведите камеру и скачайте бесплатное приложение Ozon</QrTitle>
 
 			<DownloadButtons>
