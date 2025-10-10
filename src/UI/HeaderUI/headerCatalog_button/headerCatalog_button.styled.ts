@@ -43,7 +43,8 @@ export const Sidebar = styled.div`
 	background: #ffffffff;
 	max-height: 100vh;
 	overflow-y: auto;
-	padding-top: 50px;
+	padding-top: 70px;
+	padding-right: 20px;
 `;
 
 export const CategoryItem = styled.div`
@@ -54,27 +55,31 @@ export const CategoryItem = styled.div`
 	line-height: 22px;
 	color: #4d4d4d;
 	&:hover {
-		background: #fff;
+		background: #c4c4c41e;
 		color: #005bff;
+		border-radius: 6px;
 	}
 `;
 
 export const ContentArea = styled.div`
 	padding-left: 50px;
+	overflow-y: auto;
+	height: 500px;
+	width: 1200px;
 	.subcategory-container {
 		display: flex;
 		column-gap: 70px;
-		width: 1000px;
+		row-gap: 50px;
 		flex-wrap: wrap;
+		width: 900px;
 	}
-	overflow-y: auto;
 `;
 
 export const Subcategory = styled.div`
 	width: 200px;
 	max-height: 80px;
-	line-height: 20px;
-	margin-top: 50px;
+	line-height: 30px;
+	margin-top: 25px;
 	h3 {
 		font-size: 16px;
 		font-weight: 600;

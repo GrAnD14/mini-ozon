@@ -224,7 +224,7 @@ const HeaderCatalogButton = () => {
 												fontSize: '32px',
 												color: '#000000',
 												display: 'block',
-
+												fontWeight: 'bold',
 												lineHeight: '1.1' // плотнее текст
 											}}
 										>
