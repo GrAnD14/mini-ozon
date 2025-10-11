@@ -1,12 +1,12 @@
 .swiper {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .swiper-slide img {
-    display: block;
-    width: 1400px;
-    height: 600px;
-    object-fit: cover;
-
+	display: block;
+	width: 1400px;
+	height: 600px;
+	object-fit: cover;
+	border-radius: 32px;
 }

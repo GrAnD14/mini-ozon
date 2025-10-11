@@ -2,6 +2,7 @@ import { MainStyled } from './Main.styled.ts';
 import ProductCard from '../../UI/MainUI/ProductCard/ ProductCard.tsx';
 import Slider from './Slider/Slider.tsx';
 import type { Product } from '../../types/product';
+import { ProductsWrapper } from './Main.styled';
 
 const Main = () => {
 	const mockProducts: Product[] = [
@@ -99,9 +100,11 @@ const Main = () => {
 	return (
 		<MainStyled>
 			<Slider />
-			{mockProducts.map(({ id, ...product }) => (
-				<ProductCard key={id} id={id} {...product} />
-			))}
+			<ProductsWrapper>
+				{mockProducts.map(({ id, ...product }) => (
+					<ProductCard key={id} id={id} {...product} />
+				))}
+			</ProductsWrapper>
 		</MainStyled>
 	);
 };

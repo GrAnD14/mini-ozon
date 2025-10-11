@@ -29,13 +29,14 @@ export const Wrapper = styled.div`
 
 export const Menu = styled.div`
 	position: absolute;
-	top: 68px;
+	top: 66px;
 	left: -200px;
 	height: 1000px;
 	width: 1400px;
 	display: flex;
 	background: #ffffffff;
 	z-index: 10;
+	font-family: 'Inter', sans-serif;
 `;
 
 export const Sidebar = styled.div`
