@@ -1,6 +1,6 @@
 import { StyledHeaderCatalogButton, Wrapper, Menu, Sidebar, CategoryItem, ContentArea, Subcategory } from './headerCatalog_button.styled.ts';
 import { useState } from 'react';
-import ImagesImports from '../../../Imports/ImagesImports.ts';
+import ImagesImports from '../../../types/ImagesImports.ts';
 
 const HeaderCatalogButton = () => {
 	const [isOpen, setIsOpen] = useState(false);

@@ -1,5 +1,5 @@
 import { CategoryBtn, IconCamera, SearchBtn, SearchBtnLink, SearchInputSpace, StyledSearchInput } from './search_input.styled.ts';
-import ImagesImports from '../../../Imports/ImagesImports.ts';
+import ImagesImports from '../../../types/ImagesImports.ts';
 
 const SearchInput = () => {
 	return (
