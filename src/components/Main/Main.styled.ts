@@ -14,11 +14,12 @@ export const ProductsWrapper = styled.div`
 	width: 1500px;
 	flex-wrap: wrap;
 	flex-direction: row;
-	column-gap: 56px;
+	column-gap: 30px;
 	background: rgb(255, 255, 255);
 	border-radius: 32px;
 	height: 950px;
 	padding-top: 50px;
+	justify-content: center;
 `;
 
 export const Banner = styled.section`

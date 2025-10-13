@@ -49,6 +49,7 @@ export const Sidebar = styled.div`
 `;
 
 export const CategoryItem = styled.div`
+	display: flex;
 	padding: 12px 16px;
 	cursor: pointer;
 	font-family: 'Inter', 'Arial', sans-serif;
@@ -79,7 +80,7 @@ export const ContentArea = styled.div`
 export const Subcategory = styled.div`
 	width: 200px;
 	max-height: 80px;
-	line-height: 30px;
+	line-height: 25px;
 	margin-top: 25px;
 	h3 {
 		font-size: 16px;

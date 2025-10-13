@@ -8,93 +8,103 @@ const Main = () => {
 	const mockProducts: Product[] = [
 		{
 			id: '1',
-			title: 'Наушники Sony WH-1000XM5',
-			currentPrice: 32990,
-			originalPrice: 37990,
-			discount: 13,
+			title: 'Брюки XL',
+			currentPrice: 74990,
+			originalPrice: 84990,
+			discount: 12,
 			rating: 4.8,
-			reviewsCount: 457
+			reviewsCount: 457,
+			image: 'public/Main/images/soroch.jpg'
 		},
 		{
 			id: '2',
-			title: 'Смартфон Samsung Galaxy S24',
+			title: 'Брюки XL',
 			currentPrice: 74990,
 			originalPrice: 84990,
 			discount: 12,
 			rating: 4.9,
-			reviewsCount: 312
+			reviewsCount: 312,
+			image: 'public/Main/images/soroch.jpg'
 		},
 		{
 			id: '3',
-			title: 'Смартфон Samsung Galaxy S24',
+			title: 'Брюки XL',
 			currentPrice: 74990,
 			originalPrice: 84990,
 			discount: 12,
 			rating: 4.9,
-			reviewsCount: 312
+			reviewsCount: 312,
+			image: 'public/Main/images/soroch.jpg'
 		},
 		{
 			id: '4',
-			title: 'Смартфон Samsung Galaxy S24',
+			title: 'Брюки XL',
 			currentPrice: 74990,
 			originalPrice: 84990,
 			discount: 12,
 			rating: 4.9,
-			reviewsCount: 312
+			reviewsCount: 312,
+			image: 'public/Main/images/soroch.jpg'
 		},
 		{
 			id: '5',
-			title: 'Смартфон Samsung Galaxy S24',
+			title: 'Брюки XL',
 			currentPrice: 74990,
 			originalPrice: 84990,
 			discount: 12,
 			rating: 4.9,
-			reviewsCount: 312
+			reviewsCount: 312,
+			image: 'public/Main/images/soroch.jpg'
 		},
 		{
 			id: '6',
-			title: 'Смартфон Samsung Galaxy S24',
+			title: 'Брюки XL',
 			currentPrice: 74990,
 			originalPrice: 84990,
 			discount: 12,
 			rating: 4.9,
-			reviewsCount: 312
+			reviewsCount: 312,
+			image: 'public/Main/images/soroch.jpg'
 		},
 		{
 			id: '7',
-			title: 'Смартфон Samsung Galaxy S24',
+			title: 'Брюки XL',
 			currentPrice: 74990,
 			originalPrice: 84990,
 			discount: 12,
 			rating: 4.9,
-			reviewsCount: 312
+			reviewsCount: 312,
+			image: 'public/Main/images/soroch.jpg'
 		},
 		{
 			id: '8',
-			title: 'Смартфон Samsung Galaxy S24',
+			title: 'Брюки XL',
 			currentPrice: 74990,
 			originalPrice: 84990,
 			discount: 12,
 			rating: 4.9,
-			reviewsCount: 312
+			reviewsCount: 312,
+			image: 'public/Main/images/soroch.jpg'
 		},
 		{
 			id: '9',
-			title: 'Смартфон Samsung Galaxy S24',
+			title: 'Брюки XL',
 			currentPrice: 74990,
 			originalPrice: 84990,
 			discount: 12,
 			rating: 4.9,
-			reviewsCount: 312
+			reviewsCount: 312,
+			image: 'public/Main/images/soroch.jpg'
 		},
 		{
 			id: '10',
-			title: 'Смартфон Samsung Galaxy S24',
+			title: 'Брюки XL',
 			currentPrice: 74990,
 			originalPrice: 84990,
 			discount: 12,
 			rating: 4.9,
-			reviewsCount: 312
+			reviewsCount: 312,
+			image: 'public/Main/images/soroch.jpg'
 		}
 	];
 	return (
