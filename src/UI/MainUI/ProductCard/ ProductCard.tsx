@@ -22,7 +22,7 @@ const ProductCard: React.FC<Product> = ({ title, currentPrice, originalPrice, di
 
 			{/* Рейтинг и отзывы */}
 			<RatingSection>
-				<span>📌 {rating}</span>
+				<span>⭐ {rating}</span>
 				<span>💬 {reviewsCount}</span>
 			</RatingSection>
 		</Card>
