@@ -14,7 +14,7 @@ const Main = () => {
 			discount: 12,
 			rating: 4.8,
 			reviewsCount: 457,
-			image: 'public/Main/images/soroch.jpg'
+			image: '/Main/images/soroch.jpg'
 		},
 		{
 			id: '2',
@@ -24,7 +24,7 @@ const Main = () => {
 			discount: 12,
 			rating: 4.9,
 			reviewsCount: 312,
-			image: 'public/Main/images/soroch.jpg'
+			image: '/Main/images/soroch.jpg'
 		},
 		{
 			id: '3',
@@ -34,7 +34,7 @@ const Main = () => {
 			discount: 12,
 			rating: 4.9,
 			reviewsCount: 312,
-			image: 'public/Main/images/soroch.jpg'
+			image: '/Main/images/soroch.jpg'
 		},
 		{
 			id: '4',
@@ -44,7 +44,7 @@ const Main = () => {
 			discount: 12,
 			rating: 4.9,
 			reviewsCount: 312,
-			image: 'public/Main/images/soroch.jpg'
+			image: '/Main/images/soroch.jpg'
 		},
 		{
 			id: '5',
@@ -54,7 +54,7 @@ const Main = () => {
 			discount: 12,
 			rating: 4.9,
 			reviewsCount: 312,
-			image: 'public/Main/images/soroch.jpg'
+			image: '/Main/images/soroch.jpg'
 		},
 		{
 			id: '6',
@@ -64,7 +64,7 @@ const Main = () => {
 			discount: 12,
 			rating: 4.9,
 			reviewsCount: 312,
-			image: 'public/Main/images/soroch.jpg'
+			image: '/Main/images/soroch.jpg'
 		},
 		{
 			id: '7',
@@ -74,7 +74,7 @@ const Main = () => {
 			discount: 12,
 			rating: 4.9,
 			reviewsCount: 312,
-			image: 'public/Main/images/soroch.jpg'
+			image: '/Main/images/soroch.jpg'
 		},
 		{
 			id: '8',
@@ -84,7 +84,7 @@ const Main = () => {
 			discount: 12,
 			rating: 4.9,
 			reviewsCount: 312,
-			image: 'public/Main/images/soroch.jpg'
+			image: '/Main/images/soroch.jpg'
 		},
 		{
 			id: '9',
@@ -94,7 +94,7 @@ const Main = () => {
 			discount: 12,
 			rating: 4.9,
 			reviewsCount: 312,
-			image: 'public/Main/images/soroch.jpg'
+			image: '/Main/images/soroch.jpg'
 		},
 		{
 			id: '10',
@@ -104,7 +104,7 @@ const Main = () => {
 			discount: 12,
 			rating: 4.9,
 			reviewsCount: 312,
-			image: 'public/Main/images/soroch.jpg'
+			image: '/Main/images/soroch.jpg'
 		}
 	];
 	return (
