@@ -31,7 +31,7 @@ export const Menu = styled.div`
 	position: absolute;
 	top: 66px;
 	left: -200px;
-	height: 1000px;
+	max-height: 1000px;
 	width: 1400px;
 	display: flex;
 	background: #ffffffff;
@@ -44,7 +44,6 @@ export const Sidebar = styled.div`
 	background: #ffffffff;
 	max-height: 100vh;
 	overflow-y: auto;
-	padding-top: 70px;
 	padding-right: 20px;
 `;
 
