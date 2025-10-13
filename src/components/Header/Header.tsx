@@ -4,7 +4,7 @@ import SearchInput from '../../UI/HeaderUI/search_input/search_input.tsx';
 import HeaderIcons from '../../UI/HeaderUI/headerIcons/headerIcons.tsx';
 import HeaderLinks from '../../UI/HeaderUI/headerlinks/headerlinks.tsx';
 import Marquee from '../../UI/HeaderUI/marquee/marquee.tsx';
-import { ImagesImports } from '../../Imports/ImagesImports.ts';
+import { ImagesImports } from '../../types/ImagesImports.ts';
 
 function Header() {
 	return (

@@ -1,5 +1,5 @@
 import { IconItem, IconItemImage, IconItemParagraph, IiconItemAdmin, StyledHeaderIcons } from './headerIcons.styled.ts';
-import ImagesImports from '../../../Imports/ImagesImports.ts';
+import ImagesImports from '../../../types/ImagesImports.ts';
 const HeaderIcons = () => {
 	return (
 		<StyledHeaderIcons>
