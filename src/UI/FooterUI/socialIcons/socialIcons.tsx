@@ -1,5 +1,5 @@
 import { SocialCenter, SocialLink } from './socialIcons.styled';
-import ImagesImports from '../../../Imports/ImagesImports.ts';
+import ImagesImports from '../../../types/ImagesImports.ts';
 
 const SocialIcons = () => {
 	return (

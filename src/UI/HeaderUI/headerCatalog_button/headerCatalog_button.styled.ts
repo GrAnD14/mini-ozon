@@ -29,13 +29,14 @@ export const Wrapper = styled.div`
 
 export const Menu = styled.div`
 	position: absolute;
-	top: 68px;
+	top: 66px;
 	left: -200px;
-	height: 1000px;
+	max-height: 1000px;
 	width: 1400px;
 	display: flex;
 	background: #ffffffff;
 	z-index: 10;
+	font-family: 'Inter', sans-serif;
 `;
 
 export const Sidebar = styled.div`
@@ -43,10 +44,11 @@ export const Sidebar = styled.div`
 	background: #ffffffff;
 	max-height: 100vh;
 	overflow-y: auto;
-	padding-top: 50px;
+	padding-right: 20px;
 `;
 
 export const CategoryItem = styled.div`
+	display: flex;
 	padding: 12px 16px;
 	cursor: pointer;
 	font-family: 'Inter', 'Arial', sans-serif;
@@ -54,29 +56,37 @@ export const CategoryItem = styled.div`
 	line-height: 22px;
 	color: #4d4d4d;
 	&:hover {
-		background: #fff;
+		background: #c4c4c41e;
 		color: #005bff;
+		border-radius: 6px;
 	}
 `;
 
 export const ContentArea = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	column-gap: 50px;
-	padding: 0px 50px;
-	max-height: 100vh;
+	padding-left: 50px;
 	overflow-y: auto;
-	width: 1100px;
-	align-items: flex-start;
+	height: 500px;
+	width: 1200px;
+	.subcategory-container {
+		display: flex;
+		column-gap: 70px;
+		row-gap: 50px;
+		flex-wrap: wrap;
+		width: 900px;
+	}
 `;
 
 export const Subcategory = styled.div`
+	width: 200px;
+	max-height: 80px;
+	line-height: 25px;
+	margin-top: 25px;
 	h3 {
 		font-size: 16px;
 		font-weight: 600;
 		cursor: pointer;
-		margin-top: 50px;
 	}
+
 	li {
 		color: #4d4d4d;
 		font-family: Inter;
@@ -85,6 +95,7 @@ export const Subcategory = styled.div`
 		line-height: 25px;
 		cursor: pointer;
 	}
+
 	li:hover {
 		color: #000000ff;
 	}

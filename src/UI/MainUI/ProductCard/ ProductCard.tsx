@@ -4,11 +4,11 @@ import { Card, Image, PriceSection, CurrentPrice, OldPrice, Discount, Title, Rat
 
 // Создаем компонент карточки товара
 // Product - это тип пропсов (параметров), которые принимает компонент
-const ProductCard: React.FC<Product> = ({ title, currentPrice, originalPrice, discount, rating, reviewsCount }) => {
+const ProductCard: React.FC<Product> = ({ title, currentPrice, originalPrice, discount, rating, reviewsCount, image }) => {
 	return (
 		<Card>
 			{/* Место для изображения товара */}
-			<Image>📷</Image>
+			<Image src={image} alt={title} />
 
 			{/* Блок с ценами */}
 			<PriceSection>
@@ -22,7 +22,7 @@ const ProductCard: React.FC<Product> = ({ title, currentPrice, originalPrice, di
 
 			{/* Рейтинг и отзывы */}
 			<RatingSection>
-				<span>📌 {rating}</span>
+				<span>⭐ {rating}</span>
 				<span>💬 {reviewsCount}</span>
 			</RatingSection>
 		</Card>

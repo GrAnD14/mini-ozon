@@ -1,5 +1,5 @@
 import { QrBlock, QrImage, QrTitle, DownloadButtons } from './qrLinks.styled';
-import ImagesImports from '../../../Imports/ImagesImports.ts';
+import ImagesImports from '../../../types/ImagesImports.ts';
 
 const QrLinks = () => {
 	return (
