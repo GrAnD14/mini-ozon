@@ -1,73 +1,126 @@
-# React + TypeScript + Vite
+````markdown
+# Mini Ozon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Учебный проект - упрощенная копия маркетплейса Ozon с базовым функционалом интернет-магазина.
 
-Currently, two official plugins are available:
+## 📋 Описание
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Mini Ozon - это веб-приложение, имитирующее основные функции популярного маркетплейса. Проект разработан для изучения современных веб-технологий и практики full-stack разработки.
 
-## React Compiler
+## 🛠 Технологии
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React, TypeScript, Redux Toolkit, RTK Query, React Router
+- **UI библиотеки**: Ant Design, Tailwind CSS
+- **Backend**: Mock Service Worker (MSW) для имитации API
+- **Тестирование**: Jest, React Testing Library
+- **Инструменты**: Vite, ESLint, Prettier
 
-## Expanding the ESLint configuration
+## ✨ Функциональность
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔍 **Поиск товаров** - фильтрация и поиск по каталогу
+- 🛒 **Корзина покупок** - добавление/удаление товаров, изменение количества
+- 📦 **Категории товаров** - навигация по разделам магазина
+- 💳 **Оформление заказа** - процесс покупки с формой заказа
+- 📱 **Адаптивный дизайн** - корректное отображение на всех устройствах
+- ⚡ **Оптимизация** - быстрая загрузка и плавная работа
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Быстрый старт
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Предварительные требования
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js (версия 18 или выше)
+- npm или yarn
+
+### Установка и запуск
+
+1. **Клонирование репозитория**
+   ```bash
+   git clone https://github.com/GrAnD14/mini-ozon.git
+   cd mini-ozon
+   ```
+````
+
+2. **Установка зависимостей**
+
+   ```bash
+   npm install
+   ```
+
+3. **Запуск в режиме разработки**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Открыть в браузере**
+   ```
+   http://localhost:5173
+   ```
+
+### Другие команды
+
+```bash
+# Сборка для production
+npm run build
+
+# Превью сборки
+npm run preview
+
+# Запуск тестов
+npm run test
+
+# Линтинг кода
+npm run lint
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📁 Структура проекта
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```
+mini-ozon/
+├── src/
+│   ├── components/     # React компоненты
+│   ├── pages/         # Страницы приложения
+│   ├── store/         # Redux store и slices
+│   ├── api/           # RTK Query API
+│   ├── mocks/         # Mock данные и handlers
+│   └── types/         # TypeScript типы
+├── public/            # Статические файлы
+└── package.json       # Зависимости и скрипты
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🎯 Основные компоненты
+
+- **Header** - навигация и поиск
+- **ProductList** - отображение каталога товаров
+- **ProductCard** - карточка товара
+- **Cart** - корзина покупок
+- **OrderForm** - форма оформления заказа
+
+## 🤝 Вклад в проект
+
+Если вы хотите внести свой вклад в проект:
+
+1. Форкните репозиторий
+2. Создайте ветку для вашей функции (`git checkout -b feature/amazing-feature`)
+3. Закоммитьте изменения (`git commit -m 'Add some amazing feature'`)
+4. Запушьте в ветку (`git push origin feature/amazing-feature`)
+5. Откройте Pull Request
+
+## 📝 Лицензия
+
+Этот проект создан в учебных целях и не предназначен для коммерческого использования.
+
+## 👤 Автор
+
+- **GrAnD14** - [GitHub](https://github.com/GrAnD14)
+
+## 🙏 Благодарности
+
+- Команде Ozon за вдохновение
+- Сообществу React и Redux за отличную документацию
+- Разработчикам Ant Design за прекрасный UI kit
+
+```
+
+Этот README включает все основные разделы, которые обычно ожидают увидеть пользователи и разработчики. Вы можете дополнить его информацией о конкретных функциях, которые реализованы в вашем проекте, или добавить скриншоты интерфейса.
 ```
