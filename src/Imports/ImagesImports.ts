@@ -16,6 +16,10 @@ import SearchSVG from '/Header/Nav/Search.svg';
 import Shopping_cart from '/Header/Nav/Shopping_cart.svg';
 import Shopping_cart_blue from '/Header/Nav/Shopping_cart_blue.svg';
 import Title_Logo from '/Header/Nav/Title_Logo.svg';
+//Header/Modal
+import RU from '/Header/Modal/RU.svg';
+import ENG from '/Header/Modal/ENG.svg';
+import AddressBackground from '/Header/Modal/AddressBackground.svg';
 //Main
 //Main/Slider
 import Slide_1 from '/Main/Slider/Slide_1.png';
@@ -31,7 +35,6 @@ import jobsLogo from '/Footer/jobsLogo.svg';
 import logisticsIcon from '/Footer/logisticsIcon.svg';
 import officeIcon from '/Footer/officeIcon.svg';
 import warehouseIcon from '/Footer/warehouseIcon.svg';
-import 
 // Footer/media
 import ok from '/Footer/media/ok.svg';
 import tg from '/Footer/media/tg.svg';
@@ -61,6 +64,9 @@ export const ImagesImports = {
 	Shopping_cart,
 	Shopping_cart_blue,
 	Title_Logo,
+	RU,
+	ENG,
+	AddressBackground,
 
 	//Main
 	Slide_1,
