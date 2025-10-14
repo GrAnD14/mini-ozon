@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AddressContainer, ImageWrapper, Title, Description, Actions, BigActionButton, NoteText } from './AddressModal.styled';
-import ImagesImports from '../../../Imports/ImagesImports';
+import ImagesImports from '../../../types/ImagesImports.ts';
 import type { Props } from '../../../types/LanguageCurrencyModal_types/LanguageCurrencyModal_types.ts';
 
 export const AddressModal: React.FC<Props> = ({ onClose, onSave }) => {
