@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import ImagesImports from '../../../../Imports/ImagesImports';
+import ImagesImports from '../../../../types/ImagesImports.ts';
 import { DropdownWrapper, Selected, Option, SelectedInfo, ArrowDown, Options } from './LanguagesDropdown.styled';
 
 interface Lang {

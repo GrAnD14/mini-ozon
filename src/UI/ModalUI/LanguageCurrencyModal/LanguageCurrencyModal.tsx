@@ -17,7 +17,7 @@ export const LanguageCurrencyModal: React.FC<Props> = ({ onClose, onSave, initia
 	function handleSave() {
 		localStorage.setItem('uiLang', lang);
 		localStorage.setItem('currency', currency);
-		if (onSave) onSave(lang, currency);
+		if (onSave) onSave?.({ lang, currency });
 		onClose();
 	}
 

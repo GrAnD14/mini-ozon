@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Modal } from '../../../components/Modal/Modal.tsx';
 import { ButtonWrapper } from './languageCurrency_button.styled.ts';
-import ImagesImports from '../../../Imports/ImagesImports';
+import ImagesImports from '../../../types/ImagesImports.ts';
 import LanguageCurrencyModal from '../../ModalUI/LanguageCurrencyModal/LanguageCurrencyModal';
 
 export const LanguageButton = () => {
