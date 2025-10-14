@@ -1,14 +1,12 @@
-import { IconItem, IconItemImage, IconItemParagraph, IiconItemAdmin, StyledHeaderIcons } from './headerIcons.styled.ts';
+import { IconItem, IconItemImage, IconItemParagraph, StyledHeaderIcons } from './headerIcons.styled.ts';
 import ImagesImports from '../../../types/ImagesImports.ts';
+
+import LogIn_Form from '../LogIn_Form/LogIn_Form.tsx';
+
 const HeaderIcons = () => {
 	return (
 		<StyledHeaderIcons>
-			{/*передаем нашу переменную сюда, как компонент, в таком виде <Имя_переменной, которую мы создали ранее>.*/}
-			{/* А внутри уже пишем все, что нам нужно (хоть добавляем еще новую стилизованную переменную по старой тактике)*/}
-			<IconItem>
-				<IconItemImage className='LogIn' src={ImagesImports.LogIn} alt='Admin' />
-				<IiconItemAdmin className='Admin'>Admin</IiconItemAdmin>
-			</IconItem>
+			<LogIn_Form />
 
 			<IconItem>
 				<IconItemImage className='Orders' src={ImagesImports.Orders} alt='Заказы' />

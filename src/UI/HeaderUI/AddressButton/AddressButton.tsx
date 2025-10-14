@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AddressModal from '../../../components/Modal/AddressModel/AddressModal';
+import AddressModal from '../../../components/Modal/AddressModal/AddressModal';
 import { Modal } from '../../../components/Modal/Modal';
 import { AddressButtonWrapper } from './AddressButton.styled';
 

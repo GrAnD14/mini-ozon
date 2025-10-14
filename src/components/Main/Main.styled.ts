@@ -17,7 +17,7 @@ export const ProductsWrapper = styled.div`
 	column-gap: 30px;
 	background: rgb(255, 255, 255);
 	border-radius: 32px;
-	height: 950px;
+	height: 100%;
 	padding-top: 50px;
 	justify-content: center;
 `;

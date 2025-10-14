@@ -34,7 +34,7 @@ export const LanguageCurrencyModal: React.FC<Props> = ({ onClose, onSave }) => {
 
 	return (
 		<Container>
-			<Title>Валюта</Title>
+			<Title>Язык и валюта</Title>
 			<Description>Выберите знакомую для вас валюту, чтобы оценить стоимость товаров. Валюта оплаты будет рассчитана в рублях.</Description>
 
 			<TwoCols>

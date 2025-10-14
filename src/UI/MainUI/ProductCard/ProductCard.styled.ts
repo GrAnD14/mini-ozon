@@ -7,7 +7,8 @@ export const Card = styled.div`
 	padding: 12px;
 	background: white;
 	width: 223px;
-	height: 393px;
+	height: 450px;
+	margin-bottom: 30px;
 	&:hover {
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	}
@@ -67,4 +68,39 @@ export const RatingSection = styled.div`
 	gap: 8px;
 	font-size: 12px;
 	color: #666;
+`;
+
+export const CardButtonWrapper = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	margin: 15px 0;
+`;
+
+export const BuyBtn = styled.button`
+	width: 120px;
+	height: 40px;
+	background: rgba(0, 91, 255, 1);
+	border-radius: 10px;
+	color: #ffffffff;
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	&:hover {
+		background: rgb(0, 80, 231);
+	}
+`;
+
+export const ReviewsBtn = styled.button`
+	width: 120px;
+	height: 40px;
+	background: #f6d44e;
+	border-radius: 10px;
+	color: #000;
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+
+	&:hover {
+		background: #e4bd37;
+	}
 `;

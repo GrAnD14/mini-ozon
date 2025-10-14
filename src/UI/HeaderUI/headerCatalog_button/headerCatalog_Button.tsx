@@ -1,7 +1,7 @@
 import { StyledHeaderCatalogButton, Wrapper, Menu, Sidebar, CategoryItem, ContentArea, Subcategory } from './headerCatalog_button.styled.ts';
 import { useState } from 'react';
 import ImagesImports from '../../../types/ImagesImports.ts';
-import { categories } from '../../../types/productArray.ts';
+import { categories } from '../../../types/ProductCard_types/productArray.ts';
 
 const HeaderCatalogButton = () => {
 	const [isOpen, setIsOpen] = useState(false);
