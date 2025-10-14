@@ -1,24 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Container, Title, Description, TwoCols, Col, Label, NativeSelect, Actions, SaveButton, CancelButton } from './LanguageCurrencyModal.styled.ts';
+import { currencies, langs, type Props } from '../../../types/LanguageCurrencyModal_types/LanguageCurrencyModal_types.ts';
 
-interface Props {
-	onClose: () => void;
-	onSave?: (lang: string, currency: string) => void;
-}
-
-const LANGS = [
-	{ code: 'ru', label: 'Русский' },
-	{ code: 'en', label: 'English' }
-];
-
-const CURRENCIES = [
-	{ code: 'RUB', label: 'Российский рубль, RUB' },
-	{ code: 'USD', label: 'Доллар США, USD' }
-];
-
-export const LanguageCurrencyModal: React.FC<Props> = ({ onClose, onSave }) => {
-	const [lang, setLang] = useState(localStorage.getItem('uiLang') ?? 'ru');
-	const [currency, setCurrency] = useState(localStorage.getItem('currency') ?? 'RUB');
+export const LanguageCurrencyModal: React.FC<Props> = ({ onClose, onSave, initialLang, initialCurrency }) => {
+	const [lang, setLang] = useState(initialLang || localStorage.getItem('uiLang') || 'ru');
+	const [currency, setCurrency] = useState(initialCurrency || localStorage.getItem('currency') || 'RUB');
 	const firstRef = useRef<HTMLSelectElement | null>(null);
 
 	useEffect(() => {
@@ -28,7 +14,7 @@ export const LanguageCurrencyModal: React.FC<Props> = ({ onClose, onSave }) => {
 	function save() {
 		localStorage.setItem('uiLang', lang);
 		localStorage.setItem('currency', currency);
-		onSave?.(lang, currency);
+		onSave?.({ lang, currency });
 		onClose();
 	}
 
@@ -41,7 +27,7 @@ export const LanguageCurrencyModal: React.FC<Props> = ({ onClose, onSave }) => {
 				<Col>
 					<Label>Язык</Label>
 					<NativeSelect ref={firstRef} value={lang} onChange={e => setLang(e.target.value)}>
-						{LANGS.map(l => (
+						{langs.map(l => (
 							<option key={l.code} value={l.code}>
 								{l.label}
 							</option>
@@ -52,7 +38,7 @@ export const LanguageCurrencyModal: React.FC<Props> = ({ onClose, onSave }) => {
 				<Col>
 					<Label>Валюта</Label>
 					<NativeSelect value={currency} onChange={e => setCurrency(e.target.value)}>
-						{CURRENCIES.map(c => (
+						{currencies.map(c => (
 							<option key={c.code} value={c.code}>
 								{c.label}
 							</option>
