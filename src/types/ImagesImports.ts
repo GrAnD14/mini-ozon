@@ -71,6 +71,10 @@ import apple from '/Footer/downloadStores/apple.svg';
 import huawei from '/Footer/downloadStores/huawei.svg';
 import qr_code from '/Footer/downloadStores/qr_code.svg';
 import rustore from '/Footer/downloadStores/rustore.svg';
+//langs
+import ENG from '/Header/Modal/ENG.svg';
+import RU from '/Header/Modal/RU.svg';
+import AddressBackground from '/Header/Modal/AddressBackground.svg';
 
 export const ImagesImports = {
 	//Header
@@ -147,7 +151,12 @@ export const ImagesImports = {
 	apple,
 	huawei,
 	qr_code,
-	rustore
+	rustore,
+
+	//langs
+	ENG,
+	RU,
+	AddressBackground
 };
 
 export default ImagesImports;

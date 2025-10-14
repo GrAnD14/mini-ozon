@@ -1,4 +1,4 @@
-import ImagesImports from './ImagesImports.ts';
+import ImagesImports from '../ImagesImports.ts';
 
 export const categories = [
 	{

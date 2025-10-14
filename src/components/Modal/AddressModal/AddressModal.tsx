@@ -1,25 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { AddressContainer, ImageWrapper, Title, Description, ContentArea, Label, Row, Input, Actions, BigActionButton, NoteText, SubText } from './AddressModal.styled';
+import React, { useState } from 'react';
+import { AddressContainer, ImageWrapper, Title, Description, Actions, BigActionButton, NoteText } from './AddressModal.styled';
 import ImagesImports from '../../../Imports/ImagesImports';
+import type { Props } from '../../../types/LanguageCurrencyModal_types/LanguageCurrencyModal_types.ts';
 
-type Mode = 'ADDRESS' | 'MAP';
-
-interface Props {
-	onClose: () => void;
-	onSave?: (data: any) => void;
-}
-// I saved some tags for future address map and pickup point menu realization
 export const AddressModal: React.FC<Props> = ({ onClose, onSave }) => {
-	const [mode, setMode] = useState<Mode>('ADDRESS');
-	const [address, setAddress] = useState<string>(localStorage.getItem('uiAddress') ?? '');
-	const inputRef = useRef<HTMLInputElement | null>(null);
-
-	useEffect(() => {
-		inputRef.current?.focus();
-	}, []);
+	const [address] = useState<string>(localStorage.getItem('uiAddress') ?? '');
 
 	function handleBigAction() {
-		setMode('MAP');
 		onSave?.({ type: 'MAP', address });
 		onClose();
 	}

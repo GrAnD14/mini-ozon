@@ -6,8 +6,7 @@ import LanguageCurrencyModal from '../../ModalUI/LanguageCurrencyModal/LanguageC
 
 export const LanguageButton = () => {
 	const [showModal, setShowModal] = useState(false);
-
-	const [language, setLanguage] = useState('RU');
+	const [language] = useState('RU'); // если не планируете менять язык из этого компонента
 
 	const toggleModal = () => setShowModal(!showModal);
 

@@ -1,7 +1,7 @@
 import { MainStyled } from './Main.styled.ts';
 import ProductCard from '../../UI/MainUI/ProductCard/ ProductCard.tsx';
 import Slider from './Slider/Slider.tsx';
-import type { Product } from '../../types/product';
+import type { Product } from '../../types/ProductCard_types/product.ts';
 import { ProductsWrapper } from './Main.styled';
 
 const Main = () => {
