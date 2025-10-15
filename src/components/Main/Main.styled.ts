@@ -54,11 +54,11 @@ export const Banner = styled.section`
 	background: black;
 	border-radius: 14px;
 	margin: 10px 0;
-	background: url('Main/images/banner.png') center/cover no-repeat;
+	background: url('/Main/images/banner.png') center/cover no-repeat;
 	cursor: pointer;
 
 	&:hover {
-		background: url('Main/images/banner_grey.png') center/cover no-repeat;
+		background: url('/Main/images/banner_grey.png') center/cover no-repeat;
 	}
 `;
 
@@ -76,19 +76,19 @@ export const Banners = styled.section`
 	padding: 0px 30px;
 	
 	.autumn_ft {
-	background: url("Main/images/autumn_ft.jpg") center/cover no-repeat;
+	background: url("/Main/images/autumn_ft.jpg") center/cover no-repeat;
 	width: 410px;
 	height: 150px;
 	border-radius: 14px;
 	}
 	.autumn_sec {
-	background: url("Main/images/autumn_sec.jpg") center/cover no-repeat;
+	background: url("/Main/images/autumn_sec.jpg") center/cover no-repeat;
 	width: 410px;
 	height: 150px;
 	border-radius: 14px;
 	}
 	.autumn_th {
-	background: url("Main/images/autumn_th.jpg") center/cover no-repeat;
+	background: url("/Main/images/autumn_th.jpg") center/cover no-repeat;
 	width: 410px;
 	height: 150px;
 	border-radius: 14px;
