@@ -47,6 +47,7 @@ import TestTube from '/Header/Nav/Icons/TestTube.svg';
 import CompactCamera from '/Header/Nav/Icons/CompactCamera.svg';
 import Beautician from '/Header/Nav/Icons/Beautician.svg';
 //Main
+import soroch from '/Main/images/soroch.jpg';
 //Main/Slider
 import Slide_1 from '/Main/Slider/Slide_1.png';
 import Slide_2 from '/Main/Slider/Slide_2.png';
@@ -130,6 +131,7 @@ export const ImagesImports = {
 	Slide_2,
 	Slide_3,
 	Slide_4,
+	soroch,
 
 	//Footer
 	eventsIcon,
