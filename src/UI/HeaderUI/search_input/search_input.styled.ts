@@ -11,6 +11,7 @@ export const StyledSearchInput = styled.div`
 	background: rgba(255, 255, 255, 1);
 	padding-left: 6px;
 	padding-right: 40px;
+	z-index: 1000;
 `;
 
 export const CategoryBtn = styled.button`
@@ -29,16 +30,56 @@ export const CategoryBtn = styled.button`
 	}
 `;
 
-export const CategoryList = styled.div`
+export const CategoryListContainer = styled.div`
 	background: rgba(255, 255, 255, 1);
 	position: absolute;
-	top: 50px;
-	left: 55px;
-	width: 580px;
-	height: 500px;
+	top: 15px;
+	left: 45px;
+	width: 590px;
+	height: 650px;
+	border-radius: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 1000;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 30px;
+	justify-content: center;
+	.any {
+		display: flex;
+		align-items: center;
+		margin-right: 250px;
+		width: 247px;
+		height: 35px;
+		cursor: pointer;
+	}
+	.any:hover {
+		background: #b3d7f5ff;
+		color: rgba(0, 91, 255, 1);
+	}
+`;
+
+export const CategoryListWrapper = styled.div`
 	display: flex;
 	flex-direction: row;
-	column-gap: 50px;
+	flex-wrap: wrap;
+	column-gap: 5px;
+	row-gap: 5px;
+	justify-content: center;
+	width: 500px;
+`;
+
+export const CategoryList = styled.div`
+	background: rgba(255, 255, 255, 1);
+	width: 247px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	&:hover {
+		background: rgba(193, 222, 247, 0.93);
+		color: rgba(0, 91, 255, 1);
+	}
 `;
 
 export const SearchInputSpace = styled.input`

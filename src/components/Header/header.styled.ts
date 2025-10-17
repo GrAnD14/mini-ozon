@@ -11,6 +11,7 @@ export const HeaderStyle = styled.header`
 	background: linear-gradient(360deg, rgba(240, 113, 164, 1) 0%, rgba(240, 107, 161, 1) 18%, rgba(255, 255, 255, 1) 41%);
 	border-radius: 0 0 32px 32px;
 	padding: 15px 20px;
+	z-index: 1000;
 `;
 export const LogoOzon = styled.img`
 	display: inline-block;

@@ -49,6 +49,7 @@ export const ProductsWrapper_th = styled.div`
 `;
 
 export const Banner = styled.section`
+	z-index: 1;
 	width: 1500px;
 	height: 100px;
 	background: black;

@@ -12,6 +12,7 @@ import Logo from '/Header/Nav/Logo.jpg';
 import Orders from '/Header/Nav/Orders.svg';
 import Orders_blue from '/Header/Nav/Orders_blue.svg';
 import Search from '/Header/Nav/Search.png';
+import Search_ctg from '/Header/Nav/Search_ctg.png';
 import SearchSVG from '/Header/Nav/Search.svg';
 import Shopping_cart from '/Header/Nav/Shopping_cart.svg';
 import Shopping_cart_blue from '/Header/Nav/Shopping_cart_blue.svg';
@@ -124,6 +125,7 @@ export const ImagesImports = {
 	TestTube,
 	CompactCamera,
 	Beautician,
+	Search_ctg,
 
 	//Main
 	Slide_1,
