@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import { Modal } from '../../../components/Modal/Modal.tsx';
 import { ButtonWrapper } from './languageCurrency_button.styled.ts';
-import ImagesImports from '../../../Imports/ImagesImports';
+import ImagesImports from '../../../types/ImagesImports.ts';
+
 import LanguageCurrencyModal from '../../ModalUI/LanguageCurrencyModal/LanguageCurrencyModal';
 
 export const LanguageButton = () => {
 	const [showModal, setShowModal] = useState(false);
-
-	const [language, setLanguage] = useState('RU');
-
+	const [language] = useState('RU'); // если не планируете менять язык из этого компонента
 	const toggleModal = () => setShowModal(!showModal);
 
 	return (

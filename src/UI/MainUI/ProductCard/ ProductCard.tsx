@@ -1,14 +1,14 @@
 import React from 'react';
-import type { Product } from '../../../types/product.ts';
-import { Card, Image, PriceSection, CurrentPrice, OldPrice, Discount, Title, RatingSection } from './ProductCard.styled.ts';
+import type { Product } from '../../../types/ProductCard_types/product.ts';
+import { Card, Image, PriceSection, CurrentPrice, OldPrice, Discount, Title, RatingSection, ReviewsBtn, CardButtonWrapper, BuyBtn } from './ProductCard.styled.ts';
 
 // Создаем компонент карточки товара
 // Product - это тип пропсов (параметров), которые принимает компонент
-const ProductCard: React.FC<Product> = ({ title, currentPrice, originalPrice, discount, rating, reviewsCount }) => {
+const ProductCard: React.FC<Product> = ({ title, currentPrice, originalPrice, discount, rating, reviewsCount, image }) => {
 	return (
 		<Card>
 			{/* Место для изображения товара */}
-			<Image>📷</Image>
+			<Image src={image} alt={title} />
 
 			{/* Блок с ценами */}
 			<PriceSection>
@@ -22,9 +22,14 @@ const ProductCard: React.FC<Product> = ({ title, currentPrice, originalPrice, di
 
 			{/* Рейтинг и отзывы */}
 			<RatingSection>
-				<span>📌 {rating}</span>
+				<span>⭐ {rating}</span>
 				<span>💬 {reviewsCount}</span>
 			</RatingSection>
+
+			<CardButtonWrapper>
+				<BuyBtn>Заказать</BuyBtn>
+				<ReviewsBtn>Отзывы</ReviewsBtn>
+			</CardButtonWrapper>
 		</Card>
 	);
 };

@@ -1,27 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Container, Title, Description, TwoCols, Col, Label, NativeSelect, Actions, SaveButton, SelectWrapper, SelectArrow, CancelButton } from './LanguageCurrencyModal.styled.ts';
-import ImagesImports from '../../../Imports/ImagesImports.ts';
+import { Container, Title, Description, TwoCols, Col, Label, Actions, SaveButton } from './LanguageCurrencyModal.styled.ts';
 import { LanguagesDropdown } from './LanguagesDropdown/LanguagesDropdown.tsx';
 import { CurrencyDropdown } from './CurrencyDropdown/CurrencyDropdown.tsx';
-
-interface Props {
-	onClose: () => void;
-	onSave?: (lang: string, currency: string) => void;
-	initialLang?: string;
-	initialCurrency?: string;
-}
-
-const LANGS = [
-	{ code: 'ru', label: 'Русский', flag: ImagesImports.RU },
-	{ code: 'en', label: 'English', flag: ImagesImports.ENG }
-];
-
-const CURRENCIES = [
-	{ code: 'RUB', label: 'Российский рубль, RUB' },
-	{ code: 'USD', label: 'Доллар США, USD' },
-	{ code: 'BYN', label: 'Белорусский рубль, BYN' },
-	{ code: 'KZT', label: 'Казахстанский тенге, KZT' }
-];
+import type { Props } from '../../../types/LanguageCurrencyModal_types/LanguageCurrencyModal_types.ts';
 
 export const LanguageCurrencyModal: React.FC<Props> = ({ onClose, onSave, initialLang, initialCurrency }) => {
 	const [lang, setLang] = useState(initialLang ?? localStorage.getItem('uiLang') ?? 'ru');
@@ -36,9 +17,8 @@ export const LanguageCurrencyModal: React.FC<Props> = ({ onClose, onSave, initia
 	function handleSave() {
 		localStorage.setItem('uiLang', lang);
 		localStorage.setItem('currency', currency);
-		if (onSave) onSave(lang, currency);
+		if (onSave) onSave?.({ lang, currency });
 		onClose();
-		// optionally: show toast or reload if your app requires server-side change
 	}
 
 	return (

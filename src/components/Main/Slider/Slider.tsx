@@ -9,7 +9,7 @@ import './slider.css';
 import 'swiper/css';
 // @ts-expect-error no type declarations for CSS
 import 'swiper/css/navigation';
-import ImagesImports from '../../../Imports/ImagesImports.ts';
+import ImagesImports from '../../../types/ImagesImports.ts';
 
 const Slider = () => {
 	return (

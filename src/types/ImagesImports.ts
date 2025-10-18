@@ -16,12 +16,36 @@ import SearchSVG from '/Header/Nav/Search.svg';
 import Shopping_cart from '/Header/Nav/Shopping_cart.svg';
 import Shopping_cart_blue from '/Header/Nav/Shopping_cart_blue.svg';
 import Title_Logo from '/Header/Nav/Title_Logo.svg';
-//Header/Modal
-import RU from '/Header/Modal/RU.svg';
-import ENG from '/Header/Modal/ENG.svg';
-import AddressBackground from '/Header/Modal/AddressBackground.svg';
-//Main
-//Main/Slider
+import Smartphone from '/Header/Nav/Icons/Smartphone.svg';
+import Clothes from '/Header/Nav/Icons/Clothes.svg';
+import WomenShoe from '/Header/Nav/Icons/WomenShoe.svg';
+import HouseWithaGarden from '/Header/Nav/Icons/HouseWithaGarden.svg';
+import Baby from '/Header/Nav/Icons/Baby.svg';
+import Trust from '/Header/Nav/Icons/Trust.svg';
+import SportsFishing from '/Header/Nav/Icons/SportsFishing.svg';
+import Appliances from '/Header/Nav/Icons/Appliances.svg';
+import TennisRacquet from '/Header/Nav/Icons/TennisRacquet.svg';
+import Plane from '/Header/Nav/Icons/Plane.svg';
+import DoctorsBag from '/Header/Nav/Icons/DoctorsBag.svg';
+import DogHouse from '/Header/Nav/Icons/DogHouse.svg';
+import Fiat from '/Header/Nav/Icons/Fiat.svg';
+import Books from '/Header/Nav/Icons/Books.svg';
+import Engineer from '/Header/Nav/Icons/Engineer.svg';
+import Jewel from '/Header/Nav/Icons/Jewel.svg';
+import Artist from '/Header/Nav/Icons/Artist.svg';
+import CruiseShip from '/Header/Nav/Icons/CruiseShip.svg';
+import Sofa from '/Header/Nav/Icons/Sofa.svg';
+import MusicalNote from '/Header/Nav/Icons/MusicalNote.svg';
+import MilkBottle from '/Header/Nav/Icons/MilkBottle.svg';
+import KeepAwayFromChildren from '/Header/Nav/Icons/KeepAwayFromChildren.svg';
+import Barbershop from '/Header/Nav/Icons/Barbershop.svg';
+import XboxController from '/Header/Nav/Icons/XboxController.svg';
+import Pencil from '/Header/Nav/Icons/Pencil.svg';
+import Collectibles from '/Header/Nav/Icons/Collectibles.svg';
+import Wheel from '/Header/Nav/Icons/Wheel.svg';
+import TestTube from '/Header/Nav/Icons/TestTube.svg';
+import CompactCamera from '/Header/Nav/Icons/CompactCamera.svg';
+import Beautician from '/Header/Nav/Icons/Beautician.svg';
 import Slide_1 from '/Main/Slider/Slide_1.png';
 import Slide_2 from '/Main/Slider/Slide_2.png';
 import Slide_3 from '/Main/Slider/Slide_3.png';
@@ -45,6 +69,10 @@ import apple from '/Footer/downloadStores/apple.svg';
 import huawei from '/Footer/downloadStores/huawei.svg';
 import qr_code from '/Footer/downloadStores/qr_code.svg';
 import rustore from '/Footer/downloadStores/rustore.svg';
+//langs
+import ENG from '/Header/Modal/ENG.svg';
+import RU from '/Header/Modal/RU.svg';
+import AddressBackground from '/Header/Modal/AddressBackground.svg';
 
 export const ImagesImports = {
 	//Header
@@ -64,10 +92,36 @@ export const ImagesImports = {
 	Shopping_cart,
 	Shopping_cart_blue,
 	Title_Logo,
-	RU,
-	ENG,
-	AddressBackground,
-
+	Smartphone,
+	Books,
+	Fiat,
+	DogHouse,
+	DoctorsBag,
+	Plane,
+	TennisRacquet,
+	Appliances,
+	SportsFishing,
+	Trust,
+	Baby,
+	HouseWithaGarden,
+	WomenShoe,
+	Clothes,
+	Engineer,
+	Jewel,
+	Artist,
+	CruiseShip,
+	Sofa,
+	MilkBottle,
+	KeepAwayFromChildren,
+	MusicalNote,
+	Barbershop,
+	XboxController,
+	Pencil,
+	Collectibles,
+	Wheel,
+	TestTube,
+	CompactCamera,
+	Beautician,
 	//Main
 	Slide_1,
 	Slide_2,
@@ -94,7 +148,12 @@ export const ImagesImports = {
 	apple,
 	huawei,
 	qr_code,
-	rustore
+	rustore,
+
+	//langs
+	ENG,
+	RU,
+	AddressBackground
 };
 
 export default ImagesImports;

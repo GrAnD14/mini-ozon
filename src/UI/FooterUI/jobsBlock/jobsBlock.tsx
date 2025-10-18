@@ -1,5 +1,5 @@
 import { JobsSection, LogoLink, JobsIcons, IconItem, IconTitle } from './jobsBlock.styled';
-import ImagesImports from '../../../Imports/ImagesImports.ts';
+import ImagesImports from '../../../types/ImagesImports.ts';
 
 const JobsBlock = () => (
 	<JobsSection>
