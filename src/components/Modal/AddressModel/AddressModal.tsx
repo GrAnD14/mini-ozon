@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { AddressContainer, ImageWrapper, Title, Description, ContentArea, Label, Row, Input, Actions, BigActionButton, NoteText, SubText } from './AddressModal.styled';
-import ImagesImports from '../../../Imports/ImagesImports';
+import { AddressContainer, ImageWrapper, Title, Description, Actions, BigActionButton, NoteText } from './AddressModal.styled';
+import ImagesImports from '../../../types/ImagesImports.ts';
 
 type Mode = 'ADDRESS' | 'MAP';
 

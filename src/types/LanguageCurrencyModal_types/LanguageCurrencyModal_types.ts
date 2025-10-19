@@ -1,10 +1,9 @@
 import ImagesImports from '../ImagesImports.ts';
 
 export interface SaveData {
-	type: 'MAP';
+	type: 'MAP' | 'COURIER';
 	address: string;
 }
-
 export interface Props {
 	onClose: () => void;
 	onSave?: (data: SaveData | { lang: string; currency: string }) => void;
