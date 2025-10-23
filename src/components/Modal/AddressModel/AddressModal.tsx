@@ -16,8 +16,8 @@ interface Props {
 
 // Компонент выбора адреса
 export const AddressModal: React.FC<Props> = ({ onClose, onSave }) => {
-	// Исправлено: храним state и setter
-	const [setMode] = useState<Mode>('ADDRESS');
+	// оставляем только setter, состояние не используется
+	const [, setMode] = useState<Mode>('ADDRESS');
 	const [address] = useState<string>(localStorage.getItem('uiAddress') ?? '');
 	const inputRef = useRef<HTMLInputElement | null>(null);
 
