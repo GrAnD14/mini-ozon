@@ -21,7 +21,7 @@ export const ClickToAddMarker = ({ onMapClick }: { onMapClick: (latlng: { lat: n
 const LeafletMap: React.FC<LeafletMapProps> = ({ center, zoom, children }) => {
 	return (
 		<LeafletContainer>
-			<MapContainer center={center} zoom={zoom} scrollWheelZoom style={{ width: '100%', height: '100%' }}>
+			<MapContainer center={center} zoom={zoom} scrollWheelZoom attributionControl={false} style={{ width: '100%', height: '100%' }}>
 				<TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' attribution='© OpenStreetMap contributors' />
 				{children}
 			</MapContainer>

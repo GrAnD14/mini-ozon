@@ -22,10 +22,11 @@ import L from 'leaflet';
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
-import { Marker } from 'react-leaflet/Marker';
+import { Marker } from 'react-leaflet';
 
 // Fix Leaflet default icons
-delete (L.Icon.Default.prototype as any)._getIconUrl;
+delete (L.Icon.Default.prototype as unknown as { _getIconUrl?: () => void })._getIconUrl;
+
 L.Icon.Default.mergeOptions({
 	iconRetinaUrl: markerIcon2x,
 	iconUrl: markerIcon,

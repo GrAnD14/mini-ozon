@@ -3,6 +3,7 @@ import ProductCard from '../../UI/MainUI/ProductCard/ ProductCard.tsx';
 import Slider from './Slider/Slider.tsx';
 import type { Product } from '../../types/ProductCard_types/product.ts';
 import { ProductsWrapper } from './Main.styled';
+import 'leaflet/dist/leaflet.css';
 
 const Main = () => {
 	const mockProducts: Product[] = [
