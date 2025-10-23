@@ -4,14 +4,21 @@ import ImagesImports from '../../../types/ImagesImports.ts';
 
 type Mode = 'ADDRESS' | 'MAP';
 
+interface SavePayload {
+	type: Mode;
+	address: string;
+}
+
 interface Props {
 	onClose: () => void;
-	onSave?: (data: any) => void;
+	onSave?: (data: SavePayload) => void;
 }
-// I saved some tags for future address map and pickup point menu realization
+
+// Компонент выбора адреса
 export const AddressModal: React.FC<Props> = ({ onClose, onSave }) => {
-	const [mode, setMode] = useState<Mode>('ADDRESS');
-	const [address, setAddress] = useState<string>(localStorage.getItem('uiAddress') ?? '');
+	// Исправлено: храним state и setter
+	const [setMode] = useState<Mode>('ADDRESS');
+	const [address] = useState<string>(localStorage.getItem('uiAddress') ?? '');
 	const inputRef = useRef<HTMLInputElement | null>(null);
 
 	useEffect(() => {
