@@ -3,8 +3,8 @@ import { AddressContainer, ImageWrapper, Title, Description, Actions, BigActionB
 import ImagesImports from '../../../types/ImagesImports.ts';
 import type { Props } from '../../../types/LanguageCurrencyModal_types/LanguageCurrencyModal_types.ts';
 import PickpointModal from './PickpointModal/PickpointModal.tsx';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const AddressModal: React.FC<Props> = ({ onClose: _onClose, onSave }) => {
+
+export const AddressModal: React.FC<Props> = ({ onSave }) => {
 	const [address] = useState<string>(localStorage.getItem('uiAddress') ?? '');
 	const [showPickpoint, setShowPickpoint] = useState(false);
 	function handleBigAction() {
