@@ -20,12 +20,11 @@ export const PickpointWrapper = styled.div`
 	display: flex;
 	overflow: hidden;
 	box-shadow: 0 12px 40px rgba(9, 30, 66, 0.12);
-	position: relative; /* so close button can be positioned relative to the modal */
+	position: relative;
 `;
 
-/* Left column (controls) */
 export const LeftPane = styled.div`
-	width: 360px; /* a bit smaller than the map */
+	width: 360px;
 	padding: 20px;
 	box-sizing: border-box;
 	border-right: 1px solid #f1f3f6;
@@ -35,7 +34,6 @@ export const LeftPane = styled.div`
 	background: #fff;
 `;
 
-/* Right column (map) */
 export const RightPane = styled.div`
 	flex: 1;
 	min-height: 420px;
@@ -45,7 +43,6 @@ export const RightPane = styled.div`
 	justify-content: stretch;
 `;
 
-/* Headings and texts */
 export const Heading = styled.h3`
 	margin: 0;
 	font-size: 27px;
@@ -60,7 +57,6 @@ export const SubHeading = styled.h4`
 	color: rgb(0, 26, 52);
 `;
 
-/* Small description text in grey */
 export const GreyText = styled.p`
 	margin: 0;
 	font-size: 13px;
@@ -68,16 +64,14 @@ export const GreyText = styled.p`
 	line-height: 1.4;
 `;
 
-/* Row for delivery mode buttons — each button will flex to fill */
 export const ModeRow = styled.div`
 	display: flex;
 	gap: 8px;
 	margin-top: 8px;
 `;
 
-/* Delivery mode button (active/inactive) — Ozon-style */
 export const ModeToggle = styled.button<{ active?: boolean }>`
-	flex: 1; /* both buttons share the row equally */
+	flex: 1;
 	width: 100%;
 	padding: 12px;
 	border-radius: 10px;
@@ -97,24 +91,6 @@ export const ModeToggle = styled.button<{ active?: boolean }>`
 		filter: ${p => (p.active ? 'brightness(0.98)' : 'brightness(0.98)')};
 		transform: translateY(-1px);
 	}
-
-	&:active {
-		transform: translateY(0);
-	}
-`;
-
-/* Search block and input */
-export const SearchLabel = styled.div`
-	margin-top: 14px;
-	font-size: 13px;
-	font-weight: 600;
-	color: rgb(0, 26, 52);
-`;
-
-export const SearchDescription = styled.div`
-	margin-top: 6px;
-	font-size: 13px;
-	color: rgba(0, 0, 0, 0.6);
 `;
 
 export const SearchField = styled.div`
@@ -131,7 +107,7 @@ export const FloatingLabel = styled.label<{ float?: boolean }>`
 	font-size: ${p => (p.float ? '12px' : '14px')};
 	color: ${p => (p.float ? 'rgba(0,0,0,0.6)' : 'rgba(0,0,0,0.5)')};
 	transition: all 0.12s ease;
-	pointer-events: none; /* label not clickable when floating; we'll attach htmlFor to make clickable */
+	pointer-events: none;
 	background: white;
 	padding: 0 6px;
 `;
@@ -172,12 +148,49 @@ export const ClearButton = styled.button`
 	&:hover {
 		background: #f2f2f2;
 	}
+`;
 
-	&:active {
-		transform: translateY(-50%) scale(0.98);
+export const SuggestionsBox = styled.div`
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: calc(100% + 6px);
+	z-index: 1500;
+	background: #fff;
+	border: 1px solid #e6e9ef;
+	border-radius: 8px;
+	box-shadow: 0 8px 20px rgba(9, 30, 66, 0.08);
+	max-height: 240px;
+	overflow: auto;
+`;
+
+export const SuggestionRow = styled.div`
+	padding: 10px 12px;
+	border-bottom: 1px solid #f4f5f7;
+	cursor: pointer;
+	font-size: 13px;
+	color: #0a0a0a;
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	&:hover {
+		background: #f6fbff;
 	}
 `;
 
+export const SuggestionTitle = styled.div`
+	font-weight: 600;
+`;
+
+export const SuggestionSubtitle = styled.div`
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.6);
+	margin-top: 4px;
+`;
+
+// Map placeholder and close button
 export const MapPlaceholder = styled.div`
 	flex: 1;
 	min-height: 420px;
@@ -185,14 +198,12 @@ export const MapPlaceholder = styled.div`
 	align-items: stretch;
 	justify-content: stretch;
 
-	/* Leaflet needs full-size container */
 	.leaflet-container {
 		width: 100%;
 		height: 100%;
 	}
 `;
 
-/* Close button inside wrapper (top-right corner, outside content) */
 export const PickpointClose = styled.button`
 	position: absolute;
 	top: 16px;
@@ -213,9 +224,5 @@ export const PickpointClose = styled.button`
 	&:hover {
 		background: #f2f2f2;
 		transform: scale(1.03);
-	}
-
-	&:active {
-		transform: scale(0.98);
 	}
 `;

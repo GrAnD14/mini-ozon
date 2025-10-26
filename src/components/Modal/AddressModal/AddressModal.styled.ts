@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const AddressContainer = styled.div`
 	display: flex;
@@ -7,7 +7,7 @@ export const AddressContainer = styled.div`
 	gap: 16px;
 	color: #000;
 	font-family: Inter, sans-serif;
-	width: min(480px, 92vw); /* responsive, desktop ~480px */
+	width: min(480px, 92vw);
 	max-height: 80vh;
 	background: #fff;
 	border-radius: 12px;
@@ -24,12 +24,11 @@ export const Title = styled.h2`
 	text-align: center;
 	line-height: 28px;
 	color: rgb(0, 26, 52);
-	font-family: Inter, sans-serif;
 `;
 
 export const ImageWrapper = styled.div`
 	width: 100%;
-	height: 180px; /* consistent visual weight */
+	height: 140px;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
@@ -38,115 +37,63 @@ export const ImageWrapper = styled.div`
 	img {
 		width: 100%;
 		height: 100%;
-		object-fit: cover; /* fills nicely while keeping aspect */
+		object-fit: cover;
 		border-radius: 8px;
 		display: block;
 	}
 `;
 
 export const Description = styled.p`
-	box-sizing: border-box;
-	display: flex;
-	width: 90%;
 	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	line-height: 1.4;
 	color: #7d7d7d;
-	text-align: left;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
-
-	word-break: break-word;
-	margin: 10px;
+	line-height: 1.4;
+	margin: 10px 0;
 `;
 
-export const Modes = styled.div`
+export const AddressButtonWrapper = styled.button`
 	display: flex;
-	gap: 8px;
-	margin-top: 4px;
-	justify-content: center;
-`;
-
-export const ModeButton = styled.button<{ isActive?: boolean }>`
-	padding: 8px 12px;
-	border-radius: 8px;
-	border: 1px solid transparent;
-	background: transparent;
-	cursor: pointer;
-	font-weight: 600;
-	font-size: 14px;
-
-	${p =>
-		p.isActive
-			? css`
-					background: #f0f6ff;
-					border-color: #d6e7ff;
-					color: #0845b3;
-				`
-			: css`
-					color: rgba(0, 0, 0, 0.7);
-				`}
-`;
-
-export const ContentArea = styled.div`
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
-`;
-
-export const Label = styled.label`
-	font-size: 13px;
-	color: rgba(0, 0, 0, 0.85);
-	margin-bottom: 6px;
-`;
-
-export const Row = styled.div`
-	display: flex;
-	gap: 8px;
 	align-items: center;
-`;
-
-export const Input = styled.input`
-	flex: 1;
+	gap: 8px;
+	background: #f7f7f8;
+	border-radius: 10px;
 	padding: 10px 12px;
-	border: 1px solid #e6e9ef;
-	border-radius: 8px;
+	cursor: pointer;
+	width: 100%;
+	border: none;
 	font-size: 14px;
-	outline: none;
+	color: #333;
+	font-weight: 500;
+	text-align: left;
 
-	&:focus {
-		border-color: #9bbfff;
-		box-shadow: 0 0 0 6px rgba(155, 191, 255, 0.08);
+	.city {
+		font-weight: 700;
+		color: #000;
+	}
+
+	.dot {
+		color: #999;
+	}
+
+	.set-address {
+		flex: 1;
+		color: #666;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		max-width: 220px; /* ensure it doesn't overflow header controls */
 	}
 `;
 
-export const AddressList = styled.div`
+export const AddressListWrapper = styled.div`
+	max-height: 220px;
+	overflow-y: auto;
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 8px;
 	margin-top: 6px;
+	padding-right: 6px;
 `;
 
-export const AddressItem = styled.div`
-	padding: 10px 12px;
-	border: 1px solid #e9eefb;
-	border-radius: 8px;
-	background: #fff;
-	cursor: pointer;
-	transition:
-		background-color 0.15s ease,
-		transform 0.06s ease;
-
-	&:hover {
-		background: #f6faff;
-		transform: translateY(-1px);
-	}
-`;
-
-/* Actions area — now vertical and centered for big button + note */
 export const Actions = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -159,28 +106,13 @@ export const BigActionButton = styled.button`
 	background: #005bff;
 	color: #fff;
 	border: none;
-	padding: 16px 20px;
+	padding: 14px 18px;
 	border-radius: 10px;
 	cursor: pointer;
 	font-weight: 600;
-	font-family: sans-serif;
 	width: 100%;
 	box-shadow: 0 8px 22px rgba(0, 91, 255, 0.12);
-	font-size: 16px;
-	letter-spacing: 0px;
-	line-height: 24px;
-	transition:
-		transform 0.08s ease,
-		box-shadow 0.12s ease;
-
-	&:active {
-		transform: translateY(1px);
-	}
-
-	&:focus {
-		outline: none;
-		box-shadow: 0 0 0 6px rgba(0, 91, 255, 0.12);
-	}
+	font-size: 15px;
 `;
 
 export const NoteText = styled.div`
@@ -190,29 +122,4 @@ export const NoteText = styled.div`
 	line-height: 1.3;
 	user-select: none;
 	font-weight: 400;
-`;
-
-export const SaveButton = styled.button`
-	background: #005bff;
-	color: white;
-	border: none;
-	padding: 14px 20px;
-	border-radius: 8px;
-	cursor: pointer;
-	font-weight: 600;
-	font-size: 16px;
-`;
-
-export const CancelButton = styled.button`
-	background: transparent;
-	border: 1px solid #e2e2e2;
-	padding: 14px 20px;
-	border-radius: 8px;
-	cursor: pointer;
-	font-size: 16px;
-`;
-
-export const SubText = styled.span`
-	font-size: 13px;
-	color: rgba(0, 0, 0, 0.6);
 `;
