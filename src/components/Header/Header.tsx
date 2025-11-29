@@ -12,7 +12,7 @@ function Header() {
 	return (
 		<HeaderStyle>
 			<a href='#'>
-				<LogoOzon src={ImagesImports.Logo} alt='logo-ozon' />
+				<LogoOzon src={ImagesImports.Logo} alt='logo-ozone' />
 			</a>
 			<HeaderCatalogButton />
 			<SearchInput />
