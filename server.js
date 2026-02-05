@@ -1,6 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-const path = require('path');
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 
@@ -25,7 +24,7 @@ const swaggerOptions = {
             },
         ],
     },
-    apis: ['./app.js'], // Указываем текущий файл как источник документации
+    apis: ['./server.js'], // Указываем текущий файл как источник документации
 };
 
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
